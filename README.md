@@ -14,6 +14,8 @@ If a follower is missing just add the following information to mods.yml or open 
   author: Björn "Idrinth" Büttner
   adult-only: false
   version: 0.54.1
+  released: 2022-06-08
+  updated: 2023-07-23
   followers:
   - name: Idrinth Thalui
     race: High Elf
