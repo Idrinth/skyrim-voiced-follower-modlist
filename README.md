@@ -16,8 +16,8 @@ If a follower is missing just add the following information to mods.yml or open 
   adult-only: false
   version: 0.54.1
   followers:
-    - name Idrinth Thalui
-      race: High Elf
-      sex: male
-      lines: 1837
+  - name Idrinth Thalui
+    race: High Elf
+    sex: male
+    lines: 1837
 ```
