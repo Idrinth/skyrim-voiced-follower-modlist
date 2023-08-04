@@ -17,4 +17,5 @@ If a follower is missing just add the following information to mods.yml or open 
   sex: male
   adult-only: false
   lines: 1837
+  version: 0.54.1
 ```
