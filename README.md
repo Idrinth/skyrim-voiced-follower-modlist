@@ -12,7 +12,7 @@ If a follower is missing just add the following information to mods.yml or open 
   file: IdrinthThalui.esp
   reference: 803
   description: This follower, trainer, questgiver and merchant is a male Altmer, focussing on Restoration magic and twohanded, elven swords. Comes with custom dialogue and patrols the world! 
-  author: Idrinth
+  author: Björn "Idrinth" Büttner
   race: High Elf
   sex: male
   adult-only: false
