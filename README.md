@@ -21,3 +21,9 @@ If a follower is missing just add the following information to mods.yml or open 
     sex: male
     lines: 1837
 ```
+
+### Reference-ID
+
+The reference id is the id of the placed actor in the world. if you are in the creation kit, it is on the top line to the right side. Remove the first two characters and any leading zeroes from it.
+
+![Reference-ID](/reference-id.png)
