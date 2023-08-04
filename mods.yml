@@ -13,3 +13,28 @@
     reference: 803
     lines: 1837
     name: Idrinth Thalui
+- name: Idrinth's Speaking Weapons
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/77822
+  file: idrinthSpeakingWeapons.esp
+  description: Inspired by the Project Skyrim Discord,here is a talking dagger, greatsword and axe as a hopefully fun addition to everyone's arsenal. 
+  author: Björn "Idrinth" Büttner
+  adult-only: false
+  version: 0.54.1
+  released: 2022-10-28
+  updated: 2022-12-18
+  followers:
+  - race: Dagger
+    sex: male
+    reference: 5902
+    lines: 32
+    name: Speaking Dagger
+  - race: Axe
+    sex: male
+    reference: 38353
+    lines: 2
+    name: Speaking Axe
+  - race: Greatsword
+    sex: male
+    reference: 7A070
+    lines: 19
+    name: Speaking Greatsword
