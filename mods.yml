@@ -1,11 +1,13 @@
 - name: Idrinth Thalui - Custom Voiced male Altmer
   link: https://www.nexusmods.com/skyrimspecialedition/mods/69338
   file: IdrinthThalui.esp
-  reference: 803
   description: This follower, trainer, questgiver and merchant is a male Altmer, focussing on Restoration magic and twohanded, elven swords. Comes with custom dialogue and patrols the world! 
   author: Björn "Idrinth" Büttner
-  race: High Elf
-  sex: male
   adult-only: false
-  lines: 1837
   version: 0.54.1
+  followers:
+  - race: High Elf
+    sex: male
+    reference: 803
+    lines: 1837
+    name: Idrinth Thalui
