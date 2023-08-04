@@ -10,7 +10,6 @@ If a follower is missing just add the following information to mods.yml or open 
 - name: Idrinth Thalui - Custom Voiced male Altmer
   link: https://www.nexusmods.com/skyrimspecialedition/mods/69338
   file: IdrinthThalui.esp
-  reference: 803
   description: This follower, trainer, questgiver and merchant is a male Altmer, focussing on Restoration magic and twohanded, elven swords. Comes with custom dialogue and patrols the world! 
   author: Björn "Idrinth" Büttner
   adult-only: false
@@ -20,6 +19,7 @@ If a follower is missing just add the following information to mods.yml or open 
     race: High Elf
     sex: male
     lines: 1837
+    reference: 803
 ```
 
 ### Reference-ID
