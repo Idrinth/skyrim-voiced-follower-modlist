@@ -38,3 +38,17 @@
     reference: 7A070
     lines: 19
     name: Speaking Greatsword
+- name: Khash The Argonian (A Fully Custom Voiced Follower) (SOT - Sidekicks of Tamriel)
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/40122
+  description: A completely lore-friendly fully voiced follower mod with 1600+ lines of custom dialogue. Take the young Argonian, Khash, on your adventures. 
+  file: Khash The Argonian.esp
+  author: SidekicksOfTamriel
+  adult-only: true
+  released: 2020-09-05
+  updated: 2022-08-29
+  followers:
+  - race: Argonian
+    sex: female
+    reference: 569CF
+    lines: 1600
+    name: Khash
