@@ -9,7 +9,7 @@ handlebars.registerHelper('dateOnly', function (date) {
 handlebars.registerHelper('lowerCase', function (string) {
     return `${string}`.toLowerCase();
 });
-
+fs.mkdirSync(__dirname + '/../deploy');
 yaml.parseFile('mods.yml', function (mods) {
-    fs.writeFileSync('deploy/index.html', handlebars.compile(fs.readFileSync('bin/template.html', 'utf8'))({mods}));
+    fs.writeFileSync(__dirname + '/../deploy/index.html', handlebars.compile(fs.readFileSync(__dirname + '/template.html', 'utf8'))({mods}));
 });
