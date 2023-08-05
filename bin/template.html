@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <title>Skyrim Voiced Follower Mods</title></head>
+        <script>
+            function search()
+            {
+                const mod = document.getElementById("mod").value.toLowerCase();
+                const follower = document.getElementById("follower").value.toLowerCase();
+                const race = document.getElementById("race").value.toLowerCase();
+
+                const mods = document.getElementsByClassName("mod");
+                const followers = document.getElementsByClassName("follower");
+                for (let i = 0; i < followers.length; i++) {
+                    let mayDisplay = true;
+                    if (!followers.item(i).getAttribute('data-name').includes(follower)) {
+                        mayDisplay = false;
+                    }
+                    if (!followers.item(i).getAttribute('data-race').includes(race)) {
+                        mayDisplay = false;
+                    }
+                    followers.item(i).style.display = mayDisplay ? "list-item" : "none";
+                }
+                for (let i = 0; i < mods.length; i++) {
+                    let mayDisplay = mods.item(i).getAttribute('data-mod').includes(mod);
+                    if (mayDisplay) {
+                        mayDisplay = false;
+                        const modFollowers = mods.item(i).getElementsByClassName("follower");
+                        for (let j = 0; j < modFollowers.length; j++) {
+                            if (modFollowers.item(j).style.display !== "none") {
+                                mayDisplay = true;
+                                break;
+                            }
+                        }
+                    }
+                    mods.item(i).style.display = mayDisplay ? "list-item" : "none";
+                }
+            }
+            window.setTimeout(search, 100);
+        </script>
+        <style>
+            h1, h2, h3 {
+                font-weight: bold;
+                margin:0;
+                padding: 1em 0;
+                text-align: center;
+            }
+            p {
+                margin: 0;
+                padding: 0.2em;
+            }
+            li {
+                list-style: none;
+            }
+            .meta,.dates {
+                font-size: 80%;
+            }
+            body > ul > li {
+                box-shadow: 2px 2px 4px #000;
+                border-radius: 3px;
+            }
+            form {
+                text-align: center;
+            }
+        </style>
+    <body>
+        <h1>Skyrim Voiced Follower Mods</h1>
+        <form>
+            <label for="mod">Mod Name</label><input onkeyup="search()" type="text" placeholder="Mod" id="mod">
+            <label for="follower">Follower Name</label><input onkeyup="search()" type="text" placeholder="Follower" id="follower">
+            <label for="race">Race</label><input onkeyup="search()" type="text" placeholder="Race" id="race">
+        </form>
+        <ul>
+            {{#mods}}
+            <li class="mod" data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
+                <h2><a href="{{link}}" target="_blank">{{name}}</a></h2>
+                <p class="meta">{{author}}: {{version}}@{{file}}</p>
+                <p class="dates">{{dateOnly released}} - {{dateOnly updated}}</p>
+                <p class="description">{{description}}</p>
+                <ul>
+                    {{#followers}}
+                    <li class="follower" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
+                        <h4>{{name}}({{race}}, {{sex}})</h4>
+                        <p class="lines">{{lines}} Lines</p>
+                        <p class="reference">Reference: 0x{{reference}}</p>
+                    </li>
+                    {{/followers}}
+                </ul>
+            </li>
+            {{/mods}}
+        </ul>
+    </body>
+</html>

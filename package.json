@@ -1,0 +1,8 @@
+{
+  "name": "@idrinth/skyrim-voiced-follower-modlist",
+  "version": "1.0.0",
+  "dependencies": {
+    "yamljs": "*",
+    "handlebars": "*"
+  }
+}
