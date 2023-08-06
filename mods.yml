@@ -53,3 +53,17 @@
     reference: 569CF
     lines: 1600
     name: Khash
+- name: Hanor the Hammer - voiced immersive follower
+  description: full voiced, with background story, no additional files needed (only Skyrim.esm), non-replacer, no scripts, lore friendly, suggested for stormcloak players, hunters and farmers and role players. 
+  author: Hannes821
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/1056
+  file: HanortheHammer-followeronly.esp
+  version: 3.0
+  released: 2016-10-30
+  updated: 2016-11-10
+  followes:
+  - race: Nord
+    sex: male
+    lines: 200
+    reference: 55C7
+    name: Hanor the Hammer
