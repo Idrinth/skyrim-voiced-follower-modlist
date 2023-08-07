@@ -1,0 +1,5 @@
+{
+  "require": {
+    "idrinth/config-check": "*"
+  }
+}
