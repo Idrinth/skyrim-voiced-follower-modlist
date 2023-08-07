@@ -31,7 +31,7 @@ If a follower is missing just add the following information to mods.yml or open 
     race: High Elf
     sex: male
     lines: 1837
-    reference: 803
+    reference: 0x803
 ```
 
 ### Reference-ID
