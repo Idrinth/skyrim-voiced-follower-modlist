@@ -1,0 +1,20 @@
+{
+    "verbosity": 2,
+    "blacklist": ["/vendor", "/node_modules"],
+    "xml": {
+        "validity": false
+    },
+    "ini": {
+        "validity": false
+    },
+    "json": {
+        "validity": false
+    },
+    "yaml": {
+        "validity": true,
+        "mapping": {
+            ".yml": "cwd://schema.json"
+        },
+        "additional-extensions": ["yml"]
+    }
+}
