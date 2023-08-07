@@ -158,3 +158,18 @@
     sex: male
     lines: 800
     reference: 0x48D7
+- name: Sabri - Custom Voiced Imperial Follower
+  description: Sabri is a skooma addicted, Imperial sellsword from Cyrodiil.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/76616
+  version: 2.4.1
+  author: Scarundy
+  released: 2022-11-06
+  updated: 2023-06-25
+  adult-only: yes
+  file:
+  followers:
+  - name: Sabri
+    race: Imperial
+    sex: male
+    lines: 450
+    reference: 
