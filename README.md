@@ -10,6 +10,7 @@ A list of all voiced followers in skyrim, including the ID and file-name require
 - Not voiced by xVASynth
 - Skyrim SE/AE only
 - At least one version released
+- English version
 
 ## Contributing
 
