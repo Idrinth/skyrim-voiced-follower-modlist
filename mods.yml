@@ -44,7 +44,7 @@
   file: Khash The Argonian.esp
   author: SidekicksOfTamriel
   adult-only: true
-  version: 1.7
+  version: 1.7.0
   released: 2020-09-05
   updated: 2022-08-29
   followers:
@@ -58,12 +58,28 @@
   author: Hannes821
   link: https://www.nexusmods.com/skyrimspecialedition/mods/1056
   file: HanortheHammer-followeronly.esp
-  version: 3.0
+  version: 3.0.0
   released: 2016-10-30
   updated: 2016-11-10
-  followes:
+  adult-only: false
+  followers:
   - race: Nord
     sex: male
     lines: 200
     reference: 55C7
     name: Hanor the Hammer
+- name: Genesis- Custom Voiced Dwemer Robot Follower SE Edition
+  description: Genesis is the product of a working prototype for a robotic Dwemer foot soldier. He was to be mass produced an to be put on the front lines for any battles for the Dwemer
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/3069
+  author: PyroToaster
+  adult-only: false
+  version: 1.0.0
+  released: 2016-11-08
+  updated: 2026-11-08
+  file: Genesis.esp
+  followers:
+  - race: Dwemer Automaton
+    sex: male
+    lines: 21
+    reference: 2E145
+    name: Genesis
