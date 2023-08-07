@@ -10,7 +10,7 @@
   followers:
   - race: High Elf
     sex: male
-    reference: 803
+    reference: 0x803
     lines: 1837
     name: Idrinth Thalui
 - name: Idrinth's Speaking Weapons
@@ -25,17 +25,17 @@
   followers:
   - race: Dagger
     sex: male
-    reference: 5902
+    reference: 0x5902
     lines: 32
     name: Speaking Dagger
   - race: Axe
     sex: male
-    reference: 38353
+    reference: 0x38353
     lines: 2
     name: Speaking Axe
   - race: Greatsword
     sex: female
-    reference: 7A070
+    reference: 0x7A070
     lines: 19
     name: Speaking Greatsword
 - name: Khash The Argonian (A Fully Custom Voiced Follower) (SOT - Sidekicks of Tamriel)
@@ -50,7 +50,7 @@
   followers:
   - race: Argonian
     sex: female
-    reference: 569CF
+    reference: 0x569CF
     lines: 1600
     name: Khash
 - name: Hanor the Hammer - voiced immersive follower
@@ -66,7 +66,7 @@
   - race: Nord
     sex: male
     lines: 200
-    reference: 55C7
+    reference: 0x55C7
     name: Hanor the Hammer
 - name: Genesis- Custom Voiced Dwemer Robot Follower SE Edition
   description: Genesis is the product of a working prototype for a robotic Dwemer foot soldier. He was to be mass produced an to be put on the front lines for any battles for the Dwemer
@@ -81,7 +81,7 @@
   - race: Dwemer Automaton
     sex: male
     lines: 21
-    reference: 2E145
+    reference: 0x2E145
     name: Genesis
 - name: Sofia - The Funny Fully Voiced Follower
   description: Skyrim's most endorsed follower is back for more in Skyrim Special Edition. The infamous Sofia needs little introduction as she causes trouble across Skyrim. Experience Skyrim in a whole new way with professional quality voice acting by the talented Christine Slagman (finalCrystine). 
@@ -97,7 +97,7 @@
     name: Sofia
     sex: female
     lines: 1415
-    reference: 1827
+    reference: 0x1827
 - name: Bowen - Custom voiced follower
   description: Bowen is a custom voiced, standalone follower who specializes in supporting you and other followers. He will sell your loot, share supplies with your followers and even heal you. Just don't expect him to clean your windows. He is essential and will not count towards your follower limit.  
   link: https://www.nexusmods.com/skyrimspecialedition/mods/62733
@@ -112,7 +112,7 @@
     name: Bowen
     sex: male
     lines: 700
-    reference: 1828
+    reference: 0x1828
 - name: Lucien - Immersive Fully Voiced Male Follower
   description: Lucien is a fully voiced Imperial follower with over 5000 lines of immersive, lore-friendly dialogue. Though he arrives in Skyrim as a cowardly scholar, he'll gradually gain strength and confidence by your side until he grows into a hero in his own right.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/20035
@@ -127,7 +127,7 @@
     race: Imperial
     sex: male
     lines: 5000
-    reference: 591F
+    reference: 0x591F
 - name: Flint v2.0 - The Custom Voiced Minotaur Follower
   description: Have you ever wanted a big, masculine follower, but mods like Kaidan or Hoth just aren't quite your style? Well, search no longer, as you've found Flint, the barbaric minotaur follower! With his massive hammer and "friendly" attutide, he's prepared for anything you throw at him in the world of Skyrim. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/87294
@@ -142,7 +142,7 @@
     race: Minotaur
     sex: male
     lines: 1000
-    reference: AA00
+    reference: 0xAA00
 - name: Kaidan - Fully Voiced Follower
   description: A standalone follower with over 800 lines of dialogue and marriage questline 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/12496
@@ -157,4 +157,4 @@
     race: Redguard
     sex: male
     lines: 800
-    reference: 48D7
+    reference: 0x48D7
