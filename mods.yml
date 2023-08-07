@@ -83,3 +83,18 @@
     lines: 21
     reference: 2E145
     name: Genesis
+- name: Sofia - The Funny Fully Voiced Follower
+  description: Skyrim's most endorsed follower is back for more in Skyrim Special Edition. The infamous Sofia needs little introduction as she causes trouble across Skyrim. Experience Skyrim in a whole new way with professional quality voice acting by the talented Christine Slagman (finalCrystine). 
+  author: John Jarvis and Christine Slagman
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/2180
+  file: SofiaFollower.esp
+  version: 2.5.1
+  released: 2016-11-01
+  updated: 2022-07-12
+  adult-only: yes
+  followers:
+  - race:
+    name: Sofia
+    sex: female
+    lines: 1415
+    reference: 1827
