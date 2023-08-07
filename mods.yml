@@ -113,3 +113,18 @@
     sex: male
     lines: 700
     reference: 1828
+- name: Lucien - Immersive Fully Voiced Male Follower
+  description: Lucien is a fully voiced Imperial follower with over 5000 lines of immersive, lore-friendly dialogue. Though he arrives in Skyrim as a cowardly scholar, he'll gradually gain strength and confidence by your side until he grows into a hero in his own right.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/20035
+  author: Joseph Russell
+  version: 1.6.3
+  released: 2018-09-24
+  updated: 2023-01-05
+  adult-only: false
+  file: Lucien.esp
+  followers:
+  - name: Lucien Flavius
+    race: Imperial
+    sex: male
+    lines: 5000
+    reference: 591F
