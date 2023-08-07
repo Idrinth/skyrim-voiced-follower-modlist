@@ -12,16 +12,16 @@ handlebars.registerHelper('lowerCase', function (string) {
 fs.mkdirSync(__dirname + '/../deploy');
 yaml.parseFile('mods.yml', function (mods) {
     mods.sort((a, b) => {
-        if (a.updated.getUnixTimestamp() > b.updated.getUnixTimestamp()) {
+        if (a.updated.getTime() > b.updated.getTime()) {
             return 1;
         }
-        if (a.updated.getUnixTimestamp() < b.updated.getUnixTimestamp()) {
+        if (a.updated.getTime() < b.updated.getTime()) {
             return -1;
         }
-        if (a.publisched.getUnixTimestamp() < b.published.getUnixTimestamp()) {
+        if (a.publisched.getTime() < b.published.getTime()) {
             return 1;
         }
-        if (a.published.getUnixTimestamp() > b.published.getUnixTimestamp()) {
+        if (a.published.getTime() > b.published.getTime()) {
             return -1;
         }
         return 0;
