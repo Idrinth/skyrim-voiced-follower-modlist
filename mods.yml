@@ -143,3 +143,18 @@
     sex: male
     lines: 1000
     reference: AA00
+- name: Kaidan - Fully Voiced Follower
+  description: A standalone follower with over 800 lines of dialogue and marriage questline 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/12496
+  version: 1.5.0
+  author: livtempleton
+  released: 2017-09-26
+  updated: 2018-01-03
+  adult-only: true
+  file: 0Kaidan.esp
+  followers:
+  - name: Kaidan
+    race: Redguard
+    sex: male
+    lines: 800
+    reference: 48D7
