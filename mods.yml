@@ -128,3 +128,16 @@
     sex: male
     lines: 5000
     reference: 591F
+- name: Flint v2.0 - The Custom Voiced Minotaur Follower
+  description: Have you ever wanted a big, masculine follower, but mods like Kaidan or Hoth just aren't quite your style? Well, search no longer, as you've found Flint, the barbaric minotaur follower! With his massive hammer and "friendly" attutide, he's prepared for anything you throw at him in the world of Skyrim. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/87294
+  version: 2.0.0
+  author: eggsb3ned1ct
+  adult-only: yes
+  file: Flint9.esp
+  followers:
+  - name: Flint
+    race: Minotaur
+    sex: male
+    lines: 1000
+    reference:
