@@ -166,10 +166,10 @@
   released: 2022-11-06
   updated: 2023-06-25
   adult-only: yes
-  file:
+  file: SU02SabriFollower.esp
   followers:
   - name: Sabri
     race: Imperial
     sex: male
     lines: 450
-    reference: 
+    reference: 0xAA06
