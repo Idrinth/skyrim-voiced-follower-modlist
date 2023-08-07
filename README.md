@@ -2,6 +2,15 @@
 
 A list of all voiced followers in skyrim, including the ID and file-name required to do patchless interactions
 
+## Conditions for inclusion
+
+- Not stolen from another universe
+- Custom voiced
+- Not voiced via AI
+- Not voiced by xVASynth
+- Skyrim SE/AE only
+- At least one version released
+
 ## Contributing
 
 If a follower is missing just add the following information to mods.yml or open an issue with the mod-link:
