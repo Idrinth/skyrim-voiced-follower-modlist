@@ -11,7 +11,7 @@ handlebars.registerHelper('lowerCase', function (string) {
 });
 fs.mkdirSync(__dirname + '/../deploy');
 yaml.parseFile('mods.yml', function (mods) {
-    mods.sort((a, b) => {
+    mods = mods.sort((a, b) => {
         if (a.updated.getTime() > b.updated.getTime()) {
             return 1;
         }
