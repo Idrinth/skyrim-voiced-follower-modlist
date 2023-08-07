@@ -9,6 +9,7 @@
                 const mod = document.getElementById("mod").value.toLowerCase();
                 const follower = document.getElementById("follower").value.toLowerCase();
                 const race = document.getElementById("race").value.toLowerCase();
+                const lines = Number.parseInt(document.getElementById("lines").value);
 
                 const mods = document.getElementsByClassName("mod");
                 const followers = document.getElementsByClassName("follower");
@@ -18,6 +19,10 @@
                         mayDisplay = false;
                     }
                     if (!followers.item(i).getAttribute('data-race').includes(race)) {
+                        mayDisplay = false;
+                    }
+                    const lns = Number.parseInt(followers.item(i).getAttribute('data-lines'));
+                    if (lns < lines) {
                         mayDisplay = false;
                     }
                     followers.item(i).style.display = mayDisplay ? "list-item" : "none";
@@ -81,6 +86,7 @@
             <label for="mod">Mod Name</label><input onkeyup="search()" type="text" placeholder="Mod" id="mod">
             <label for="follower">Follower Name</label><input onkeyup="search()" type="text" placeholder="Follower" id="follower">
             <label for="race">Race</label><input onkeyup="search()" type="text" placeholder="Race" id="race">
+            <label for="lines">Minimum lines</label><input onkeyup="search()" type="number" value="0" min="0" max="1000000" id="lines">
         </form>
         <ul>
             {{#mods}}
