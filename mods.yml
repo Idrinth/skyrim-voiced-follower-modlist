@@ -93,8 +93,23 @@
   updated: 2022-07-12
   adult-only: yes
   followers:
-  - race:
+  - race: Nord
     name: Sofia
     sex: female
     lines: 1415
     reference: 1827
+- name: Bowen - Custom voiced follower
+  description: Bowen is a custom voiced, standalone follower who specializes in supporting you and other followers. He will sell your loot, share supplies with your followers and even heal you. Just don't expect him to clean your windows. He is essential and will not count towards your follower limit.  
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/62733
+  author: Bowen Bloodgood
+  file: BowenFollower.esp
+  version: 0.12.5
+  released: 2022-01-30
+  updated: 2023-07-24
+  adult-only: false
+  followers:
+  - race: Breton
+    name: Bowen
+    sex: male
+    lines: 700
+    reference: 1828
