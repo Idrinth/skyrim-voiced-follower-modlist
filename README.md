@@ -1,4 +1,4 @@
-# Skyrim VoicedFollower Modlist
+# Skyrim Voiced Follower Modlist
 
 A list of all voiced followers in skyrim, including the ID and file-name required to do patchless interactions
 
