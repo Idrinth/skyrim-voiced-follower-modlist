@@ -336,6 +336,7 @@
   adult-only: true
   version: 2.2.3
   file: Morgaine Custom voiced follower.esp
+  followers:
   - name: Morgaine
     sex: female
     race: Elf
@@ -346,7 +347,7 @@
   link: https://www.nexusmods.com/skyrimspecialedition/mods/71822
   author: WHATWhyomg
   released: 2023-06-11
-  updated: 2023-06-
+  updated: 2023-06-14
   adult-only: true
   version: 1.22.0
   file: MM01YakFollower.esp
