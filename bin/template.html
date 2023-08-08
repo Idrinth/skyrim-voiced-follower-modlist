@@ -102,7 +102,7 @@
                         <p class="lines">{{lines}} Lines</p>
                         <p class="reference">Reference: {{reference}}</p>
                         {{#if interactions}}
-                            <p class="interactions" title="Interacts with{{#each interactions}}{{linebreak}}{{name}} in {{file}} has:{{#commentary}}{{linebreak}}- commentary{{/commentary}}{{#scene}}{{linebreak}}- scenes{{/scene}}{{#dialogue}}{{linebreak}}- modified dialogue{{/dialogue}}{{/each}}">Interactions: {{interactions.length}}</p>
+                            <p class="interactions" title="Interacts with{{#each interactions}}{{linebreak}}- {{name}} in {{file}}{{#commentary}}{{linebreak}}  - commentary{{/commentary}}{{#scene}}{{linebreak}}  - scenes{{/scene}}{{#dialogue}}{{linebreak}}  - modified dialogue{{/dialogue}}{{/each}}">Interactions: {{interactions.length}}</p>
                         {{/if}}
                     </li>
                     {{/followers}}
