@@ -217,3 +217,18 @@
     sex: female
     lines: 1000
     reference: "0x29AF5"
+- name: Goras Nels - The Fully Voiced Dunmer Follower
+  description: Adds a new, fully-voiced follower to the game. Goras Nels can be found in the New Gnisis Corner Club in Windhelm. He's a foul-tempered Dunmer warrior from Maar Gan. When he's not complaining about life in Skyrim, he's complaining about your other followers. Features nearly 200 lines of recorded dialogue. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/63245
+  author: Ninjaconor
+  released: 2022-02-07
+  updated: 2022-02-07
+  adult-only: true
+  version: 1.0.0
+  file: cl01DarkElfFollower.esp
+  followers:
+  - name: Goras Nels
+    race: Dark Elf/Dunmer
+    sex: male
+    lines: 200
+    reference: "0x"
