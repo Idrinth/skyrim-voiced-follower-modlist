@@ -216,3 +216,17 @@
     sex: female
     lines: 1000
     reference: 0x29AF5
+- name: Artigun The Custom Voiced Half-Dovah Follower
+  description: My first custom-voiced follower for Skyrim. Based on the idea of a Dovah being resurrected in the body of a mortal. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/77616
+  author: ChaozOfKalameet
+  released: 2022-10-22
+  updated: 2023-06-01
+  adult-only: false
+  file: CZ94ArtigunFollower.esp
+  followers:
+  - name: Artigun
+    race: Argonian-Dovah
+    sex: male
+    lines: 490
+    reference:
