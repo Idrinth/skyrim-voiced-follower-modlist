@@ -232,3 +232,32 @@
     sex: male
     lines: 200
     reference: "0x"
+- name: Artigun The Custom Voiced Half-Dovah Follower
+  description: My first custom-voiced follower for Skyrim. Based on the idea of a Dovah being resurrected in the body of a mortal. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/77616
+  author: ChaozOfKalameet
+  released: 2022-10-22
+  updated: 2023-06-01
+  adult-only: false
+  file: CZ94ArtigunFollower.esp
+  followers:
+  - name: Artigun
+    race: Argonian-Dovah
+    sex: male
+    lines: 490
+    reference: "0x"
+- name: Lobo a Fully Voiced Werewolf Follower
+  description: This is a fully voiced werewolf follower (voiced by me the author of the mod) with a custom follower framework with some features. 170+ lines of fully immersive and lore friendly dialogue with interactive dialogue. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/68706
+  author: FrownDere99
+  released: 2022-05-27
+  updated: 2022-06-08
+  adult-only: false
+  file: Lobo fully voiced werewolf follower.esp
+  version: 1.2.0
+  followers:
+  - name: Lobo
+    race: Werewolf
+    sex: male
+    lines: 170
+    reference: "0x"
