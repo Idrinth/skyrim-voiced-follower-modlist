@@ -5,8 +5,8 @@ handlebars.registerHelper('dateOnly', function (date) {
     const dt = new Date(date);
     return `${dt.getFullYear()}-${dt.getMonth() + 1}-${dt.getDate()}`;
 });
-handlebars.registerHelper('txtlist', function (string) {
-    return `\n- ${string}`;
+handlebars.registerHelper('linebreak', function () {
+    return `\n`;
 });
 
 handlebars.registerHelper('lowerCase', function (string) {
