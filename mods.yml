@@ -261,3 +261,18 @@
     sex: male
     lines: 170
     reference: "0x"
+- name: Kaidan 2
+  description: Rebuilt and expanded, this romantic follower features over 1200 lines of dialogue, custom home, and mini quests. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/19075
+  author: LivTempleton
+  released: 2018-08-08
+  updated: 2019-10-25
+  adult-only: true
+  file: 0Kaidan.esp
+  version: 2.1.1
+  followers:
+  - name: Kaidan
+    sex: male
+    race: Redguard
+    lines: 1200
+    reference: "0x"
