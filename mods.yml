@@ -326,3 +326,17 @@
     race: Breton
     lines: 3750
     reference: "0x"
+- name: Morgaine - Fully Voiced Standalone Follower
+  description: A standalone fully voiced follower for Skyrim SE 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/41027
+  author: GhostWarrior13000
+  released: 2020-10-01
+  updated: 2023-06-16
+  adult-only: true
+  version: 2.2.3
+  file: Morgaine Custom voiced follower.esp
+  - name: Morgaine
+    sex: female
+    race: Elf
+    lines: 200
+    reference: "0x"
