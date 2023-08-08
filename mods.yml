@@ -308,6 +308,21 @@
   file: EA01Eefin.esp
   followers:
   - name: Eefin
+    race: Wood elf/Bosmer
     sex: male
     lines: 275
+    reference: "0x"
+- name: Remiel-Custom Voiced Dwemer Specialist and Companion
+  description: Adds Remiel to your game, custom voiced with ~3750 lines of dialogue, a Breton engineer who will accompany you in your travels. She's travelled from Wayrest to explore dwemer ruins in Skyrim, but she needs your help. While she's not much of a fighter, she boasts a knack for machinery and will reprogram a dwemer spider to fight alongside you both. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/51874
+  author: Maplespice
+  released: 2021-07-02
+  updated: 2023-07-24
+  adult-only: false
+  version: 1.6.5
+  file:
+  - name: Remiel
+    sex: female
+    race: Breton
+    lines: 3750
     reference: "0x"
