@@ -8,7 +8,7 @@
   released: 2022-06-08
   updated: 2023-07-23
   followers:
-  - race: High Elf
+  - race: High Elf/Altmer
     sex: male
     reference: 0x803
     lines: 1837
@@ -202,3 +202,17 @@
     sex: male
     lines: 1200
     reference: 0x893ED
+- name: Bula - A (Not So) Delicate Orsimer (Custom Fully Voiced Follower)
+  description: A lighthearted, lore-friendly Orc companion who has a gentle heart and an appetite for adventure--as well as a knack for writing! With a custom voice and special 'relationship' system, Bula is a fun, immersive addition to any playthrough.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/86843
+  author: Janieboo
+  released: 2023-03-12
+  updated: 2023-06-18
+  adult-only: false
+  file: JNBBula.esp
+  followers:
+  - name: Bula
+    race: Orc/Orsimer
+    sex: female
+    lines: 1000
+    reference: 0x29AF5
