@@ -91,7 +91,7 @@
   version: 2.5.1
   released: 2016-11-01
   updated: 2022-07-12
-  adult-only: yes
+  adult-only: true
   followers:
   - race: Nord
     name: Sofia
@@ -135,7 +135,7 @@
   author: eggsb3ned1ct
   released: 2023-03-13
   updated: 2023-07-16
-  adult-only: yes
+  adult-only: true
   file: Flint9.esp
   followers:
   - name: Flint
@@ -165,7 +165,7 @@
   author: Scarundy
   released: 2022-11-06
   updated: 2023-06-25
-  adult-only: yes
+  adult-only: true
   file: SU02SabriFollower.esp
   followers:
   - name: Sabri
@@ -180,7 +180,7 @@
   author: BluePwnsU
   released: 2022-02-01
   updated: 2023-07-10
-  adult-only: no
+  adult-only: false
   file: BPUFXelzazFollower.esp 
   followers:
   - name: Xelzaz
@@ -188,3 +188,17 @@
     sex: male
     lines: 6350
     reference: 0x893E1
+- name: Bjorn - Custom Voiced Mercenary Follower
+  description: Add a fully voiced, lore-friendly, standalone follower. Bjorn has his own backstory, reacts to missions and surroundings, chats in taverns, has his own horse, interacts with other NPCs, offers small quests, and can lead to a deep friendship or a true love story.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/91652
+  author: danghidini
+  released: 2023-05-19
+  updated: August 2023-08-05
+  adult-only: false
+  file: dg04bjornfollower.esp
+  followers:
+  - name: Bjorn
+    race: Nord
+    sex: male
+    lines: 1200
+    reference: 0x893ED
