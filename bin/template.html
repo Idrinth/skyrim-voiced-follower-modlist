@@ -102,7 +102,7 @@
                         <p class="lines">{{lines}} Lines</p>
                         <p class="reference">Reference: {{reference}}</p>
                         {{#if interactions}}
-                            <p class="interactions" title="{{#each interactions}}{{name}} in {{file}}: {{level}}\n{{/each}}">Interactions: {{interactions.length}}</p>
+                            <p class="interactions" title="{{#each interactions}}{{name}} in {{file}} has:{{#comments}}\n- comments{{/comments}}{{#scenes}}\n- scenes{{/scenes}}{{#dialogue}}\n- modified dialogues{{/dialogue}}\n{{/each}}">Interactions: {{interactions.length}}</p>
                         {{/if}}
                     </li>
                     {{/followers}}
