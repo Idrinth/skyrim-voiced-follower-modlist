@@ -32,6 +32,12 @@ If a follower is missing just add the following information to mods.yml or open 
     sex: male
     lines: 1837
     reference: 0x803
+    interactions:
+    - name: Serana
+      file: Dawnguard.esm
+      scene: true
+      commentary: true
+      dialogue: true
 ```
 
 ### Reference-ID
