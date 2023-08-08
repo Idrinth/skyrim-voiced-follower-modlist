@@ -297,3 +297,17 @@
     sex: male
     lines: 800
     reference: "0x"
+- name: Eefin - Custom Voiced Wood Elf Male Follower
+  description: Eefin is a Wood Elf follower featuring custom voiced lines. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/90776
+  author: WabaSP
+  released: 2023-05-06
+  updated: 2023-05-30
+  adult-only: false
+  version: 1.2.4
+  file: EA01Eefin.esp
+  followers:
+  - name: Eefin
+    sex: male
+    lines: 275
+    reference: "0x"
