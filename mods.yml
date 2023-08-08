@@ -173,3 +173,18 @@
     sex: male
     lines: 450
     reference: 0xAA06
+- name: Xelzaz - Custom Fully Voiced Argonian Telvanni Follower
+  description: Xelzaz is a Custom Fully Voiced Argonian Lawman of House Telvanni with ~6350 lines. He is on his way to Rivenspire in High Rock, having traveled all the way from Port Telvannis in Morrowind. Xelzaz has just arrived in Skyrim and is looking for a traveling companion. In return he will keep you company, cook you warm meals and brew powerful potions. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/76616
+  version: 1.9.0
+  author: BluePwnsU
+  released: 2022-02-01
+  updated: 2023-07-10
+  adult-only: no
+  file: BPUFXelzazFollower.esp 
+  followers:
+  - name: Xelzaz
+    race: Argonian
+    sex: male
+    lines: 6350
+    reference: 
