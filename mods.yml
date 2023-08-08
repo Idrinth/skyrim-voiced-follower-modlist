@@ -13,6 +13,12 @@
     reference: "0x803"
     lines: 1837
     name: Idrinth Thalui
+    interactions:
+    - name: Serana
+      file: Dawnguard.esm
+      scene: true
+      commentary: true
+      dialogue: false
 - name: Idrinth's Speaking Weapons
   link: https://www.nexusmods.com/skyrimspecialedition/mods/77822
   file: idrinthSpeakingWeapons.esp
