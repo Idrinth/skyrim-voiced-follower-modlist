@@ -21,7 +21,7 @@ yaml.parseFile('mods.yml', function (mods) {
         if (a.updated.getTime() < b.updated.getTime()) {
             return 1;
         }
-        if (a.publisched.getTime() > b.published.getTime()) {
+        if (a.published.getTime() > b.published.getTime()) {
             return 1;
         }
         if (a.published.getTime() < b.published.getTime()) {
