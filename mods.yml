@@ -321,6 +321,7 @@
   adult-only: false
   version: 1.6.5
   file:
+  followers:
   - name: Remiel
     sex: female
     race: Breton
@@ -339,4 +340,19 @@
     sex: female
     race: Elf
     lines: 200
+    reference: "0x"
+- name: Yaksha-Custom Voiced Follower
+  description: Voiced Orc Follower! Can be found in honeystrand grove! It's near vilimyr inn!! Go to the wood area! He is still in progress, so expect updates in the future! He is my first mod. Please be nice to me, I am a sensitive gorl. ;_; 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/71822
+  author: WHATWhyomg
+  released: 2023-06-11
+  updated: 2023-06-
+  adult-only: true
+  version: 1.22.0
+  file: MM01YakFollower.esp
+  followers:
+  - name: Yaksha
+    sex: male
+    race: Orc/Orsimer
+    lines: 110
     reference: "0x"
