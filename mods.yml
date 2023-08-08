@@ -10,7 +10,7 @@
   followers:
   - race: High Elf/Altmer
     sex: male
-    reference: 0x803
+    reference: "0x803"
     lines: 1837
     name: Idrinth Thalui
 - name: Idrinth's Speaking Weapons
@@ -25,17 +25,17 @@
   followers:
   - race: Dagger
     sex: male
-    reference: 0x5902
+    reference: "0x5902"
     lines: 32
     name: Speaking Dagger
   - race: Axe
     sex: male
-    reference: 0x38353
+    reference: "0x38353"
     lines: 2
     name: Speaking Axe
   - race: Greatsword
     sex: female
-    reference: 0x7A070
+    reference: "0x7A070"
     lines: 19
     name: Speaking Greatsword
 - name: Khash The Argonian (A Fully Custom Voiced Follower) (SOT - Sidekicks of Tamriel)
@@ -50,7 +50,7 @@
   followers:
   - race: Argonian
     sex: female
-    reference: 0x569CF
+    reference: "0x569CF"
     lines: 1600
     name: Khash
 - name: Hanor the Hammer - voiced immersive follower
@@ -66,7 +66,7 @@
   - race: Nord
     sex: male
     lines: 200
-    reference: 0x55C7
+    reference: "0x55C7"
     name: Hanor the Hammer
 - name: Genesis- Custom Voiced Dwemer Robot Follower SE Edition
   description: Genesis is the product of a working prototype for a robotic Dwemer foot soldier. He was to be mass produced an to be put on the front lines for any battles for the Dwemer
@@ -81,7 +81,7 @@
   - race: Dwemer Automaton
     sex: male
     lines: 21
-    reference: 0x2E145
+    reference: "0x2E145"
     name: Genesis
 - name: Sofia - The Funny Fully Voiced Follower
   description: Skyrim's most endorsed follower is back for more in Skyrim Special Edition. The infamous Sofia needs little introduction as she causes trouble across Skyrim. Experience Skyrim in a whole new way with professional quality voice acting by the talented Christine Slagman (finalCrystine). 
@@ -97,7 +97,7 @@
     name: Sofia
     sex: female
     lines: 1415
-    reference: 0x1827
+    reference: "0x1827"
 - name: Bowen - Custom voiced follower
   description: Bowen is a custom voiced, standalone follower who specializes in supporting you and other followers. He will sell your loot, share supplies with your followers and even heal you. Just don't expect him to clean your windows. He is essential and will not count towards your follower limit.  
   link: https://www.nexusmods.com/skyrimspecialedition/mods/62733
@@ -112,7 +112,7 @@
     name: Bowen
     sex: male
     lines: 700
-    reference: 0x1828
+    reference: "0x1828"
 - name: Lucien - Immersive Fully Voiced Male Follower
   description: Lucien is a fully voiced Imperial follower with over 5000 lines of immersive, lore-friendly dialogue. Though he arrives in Skyrim as a cowardly scholar, he'll gradually gain strength and confidence by your side until he grows into a hero in his own right.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/20035
@@ -127,7 +127,7 @@
     race: Imperial
     sex: male
     lines: 5000
-    reference: 0x591F
+    reference: "0x591F"
 - name: Flint v2.0 - The Custom Voiced Minotaur Follower
   description: Have you ever wanted a big, masculine follower, but mods like Kaidan or Hoth just aren't quite your style? Well, search no longer, as you've found Flint, the barbaric minotaur follower! With his massive hammer and "friendly" attutide, he's prepared for anything you throw at him in the world of Skyrim. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/87294
@@ -142,7 +142,7 @@
     race: Minotaur
     sex: male
     lines: 1000
-    reference: 0xAA00
+    reference: "0xAA00"
 - name: Kaidan - Fully Voiced Follower
   description: A standalone follower with over 800 lines of dialogue and marriage questline 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/12496
@@ -157,7 +157,7 @@
     race: Redguard
     sex: male
     lines: 800
-    reference: 0x48D7
+    reference: "0x48D7"
 - name: Sabri - Custom Voiced Imperial Follower
   description: Sabri is a skooma addicted, Imperial sellsword from Cyrodiil.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/76616
@@ -172,7 +172,7 @@
     race: Imperial
     sex: male
     lines: 450
-    reference: 0xAA06
+    reference: "0xAA06"
 - name: Xelzaz - Custom Fully Voiced Argonian Telvanni Follower
   description: Xelzaz is a Custom Fully Voiced Argonian Lawman of House Telvanni with ~6350 lines. He is on his way to Rivenspire in High Rock, having traveled all the way from Port Telvannis in Morrowind. Xelzaz has just arrived in Skyrim and is looking for a traveling companion. In return he will keep you company, cook you warm meals and brew powerful potions. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/76616
@@ -187,7 +187,7 @@
     race: Argonian
     sex: male
     lines: 6350
-    reference: 0x893E1
+    reference: "0x893E1"
 - name: Bjorn - Custom Voiced Mercenary Follower
   description: Add a fully voiced, lore-friendly, standalone follower. Bjorn has his own backstory, reacts to missions and surroundings, chats in taverns, has his own horse, interacts with other NPCs, offers small quests, and can lead to a deep friendship or a true love story.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/91652
@@ -195,13 +195,14 @@
   released: 2023-05-19
   updated: 2023-08-05
   adult-only: false
+  version: 1.12.2
   file: dg04bjornfollower.esp
   followers:
   - name: Bjorn
     race: Nord
     sex: male
     lines: 1200
-    reference: 0x893ED
+    reference: "0x893ED"
 - name: Bula - A (Not So) Delicate Orsimer (Custom Fully Voiced Follower)
   description: A lighthearted, lore-friendly Orc companion who has a gentle heart and an appetite for adventure--as well as a knack for writing! With a custom voice and special 'relationship' system, Bula is a fun, immersive addition to any playthrough.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/86843
@@ -215,7 +216,7 @@
     race: Orc/Orsimer
     sex: female
     lines: 1000
-    reference: 0x29AF5
+    reference: "0x29AF5"
 - name: Artigun The Custom Voiced Half-Dovah Follower
   description: My first custom-voiced follower for Skyrim. Based on the idea of a Dovah being resurrected in the body of a mortal. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/77616
@@ -229,4 +230,19 @@
     race: Argonian-Dovah
     sex: male
     lines: 490
-    reference:
+    reference: "0x"
+- name: Lobo a Fully Voiced Werewolf Follower
+  description: This is a fully voiced werewolf follower (voiced by me the author of the mod) with a custom follower framework with some features. 170+ lines of fully immersive and lore friendly dialogue with interactive dialogue. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/68706
+  author: FrownDere99
+  released: 2022-05-27
+  updated: 2022-06-08
+  adult-only: false
+  file: Lobo fully voiced werewolf follower.esp
+  version: 1.2.0
+  followers:
+  - name: Lobo
+    race: Werewolf
+    sex: male
+    lines: 170
+    reference: "0x"
