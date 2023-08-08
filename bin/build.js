@@ -3,7 +3,10 @@ const yaml = require('yamljs');
 const handlebars = require('handlebars');
 handlebars.registerHelper('dateOnly', function (date) {
     const dt = new Date(date);
-    return `${dt.getFullYear()}-${dt.getMonth() + 1}-${dt.getDate()}`
+    return `${dt.getFullYear()}-${dt.getMonth() + 1}-${dt.getDate()}`;
+});
+handlebars.registerHelper('txtlist', function (string) {
+    return `\n- ${string}`;
 });
 
 handlebars.registerHelper('lowerCase', function (string) {
