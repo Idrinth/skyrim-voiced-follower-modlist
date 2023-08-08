@@ -276,3 +276,18 @@
     race: Redguard
     lines: 1200
     reference: "0x"
+- name: Deimos Custom Voiced Follower(V1.0.2)
+  description: Deimos is something I've worked on for a while now. He is an immersive follower with custom dialogue (Currently without patches right around 800 voicelines) I have big plans for Deimos and I will be working on him actively once again. This is my first unique mod without references. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/73511
+  author: The Sergeant Doggo
+  released: 2022-08-17
+  updated: 2023-04-17
+  adult-only: false
+  version: 1.0.2
+  file: DT01DeimosFollower.esp
+  followers:
+  - name: Deimos
+    race: Imperial
+    sex: male
+    lines: 800
+    reference: "0x"
