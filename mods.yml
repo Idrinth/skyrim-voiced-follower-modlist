@@ -372,3 +372,18 @@
     race: Orc/Orsimer
     lines: 1000
     reference: "0x"
+- name: Telmiltarion - Fully Voiced Male Altmer Follower
+  description: Telmiltarion is a fully voiced Altmer companion. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/57269
+  author: yourenotsupposedtobeinhere
+  released: 2021-10-21
+  updated: 2022-01-20
+  adult-only: false
+  version: 0.88.0
+  file: TelDemo.esp
+  followers:
+  - name: Telmiltarion
+    sex: male
+    race: High Elf/Altmer
+    lines: 800
+    reference: "0x"
