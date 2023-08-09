@@ -10,6 +10,7 @@
                 const follower = document.getElementById("follower").value.toLowerCase();
                 const race = document.getElementById("race").value.toLowerCase();
                 const lines = Number.parseInt(document.getElementById("lines").value);
+                const sex = document.getElementById("sex").value.toLowerCase();
 
                 const mods = document.getElementsByClassName("mod");
                 const followers = document.getElementsByClassName("follower");
@@ -23,6 +24,9 @@
                     }
                     const lns = Number.parseInt(followers.item(i).getAttribute('data-lines'));
                     if (lns < lines) {
+                        mayDisplay = false;
+                    }
+                    if (sex !== 'either' && sex !== followers.item(i).getAttribute('data-sex')) {
                         mayDisplay = false;
                     }
                     followers.item(i).style.display = mayDisplay ? "list-item" : "none";
@@ -87,6 +91,11 @@
             <label for="follower">Follower Name</label><input onkeyup="search()" type="text" placeholder="Follower" id="follower">
             <label for="race">Race</label><input onkeyup="search()" type="text" placeholder="Race" id="race">
             <label for="lines">Minimum lines</label><input onkeyup="search()" type="number" value="0" min="0" max="1000000" id="lines">
+            <label for="sex">Sex</label><select onkeyup="search()" id="sex">
+                <option>Either</option>
+                <option>Male</option>
+                <option>Female</option>
+            </select>
         </form>
         <ul>
             {{#mods}}
