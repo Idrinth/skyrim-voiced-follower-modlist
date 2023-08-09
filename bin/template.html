@@ -11,6 +11,7 @@
                 const race = document.getElementById("race").value.toLowerCase();
                 const lines = Number.parseInt(document.getElementById("lines").value);
                 const sex = document.getElementById("sex").value.toLowerCase();
+                const adult = document.getElementById('adult').checked;
 
                 const mods = document.getElementsByClassName("mod");
                 const followers = document.getElementsByClassName("follower");
@@ -33,6 +34,9 @@
                 }
                 for (let i = 0; i < mods.length; i++) {
                     let mayDisplay = mods.item(i).getAttribute('data-mod').includes(mod);
+                    if (mods.item(i).hasAttribute('adult') && !adult) {
+                        mayDisplay = false;
+                    }
                     if (mayDisplay) {
                         mayDisplay = false;
                         const modFollowers = mods.item(i).getElementsByClassName("follower");
@@ -96,10 +100,11 @@
                 <option>Male</option>
                 <option>Female</option>
             </select>
+            <label for="adult">Show adult mods</label><inpout type="checkbox" onchange="search()" id="adult"/>
         </form>
         <ul>
             {{#mods}}
-            <li class="mod" data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
+            <li class="mod"{{#adult-only}} adult{{/adult-only}} data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
                 <h2><a href="{{link}}" target="_blank">{{name}}</a></h2>
                 <p class="meta">{{author}}: {{version}}@{{file}}</p>
                 <p class="dates">{{dateOnly released}} - {{dateOnly updated}}</p>
