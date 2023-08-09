@@ -6,7 +6,6 @@ A list of all voiced followers in skyrim, including the ID and file-name require
 
 - Not stolen from another universe
 - Custom voiced
-- Not voiced via AI
 - Not voiced by xVASynth
 - Skyrim SE/AE only
 - At least one version released
