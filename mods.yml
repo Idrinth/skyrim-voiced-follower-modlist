@@ -387,3 +387,18 @@
     race: High Elf/Altmer
     lines: 800
     reference: "0x"
+- name: Custom Voiced Follower Aurelia
+  description: !!This mod is a currently work in progress mod that aims to add a new custom voiced follower to the game, it is by no means complete.!!
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/41808
+  author: Aiesha Sehmi 
+  released: 2020-10-28
+  updated: 2020-10-29
+  adult-only: false
+  version: 0.2.0
+  file: AS_2AureliaPS4Test.esp
+  followers:
+  - name: Aurelia
+    sex: female
+    race: Redguard
+    lines: 10
+    reference: "0x5903"
