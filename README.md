@@ -45,3 +45,12 @@ If a follower is missing just add the following information to mods.yml or open 
 The reference id is the id of the placed actor in the world. if you are in the creation kit, it is on the top line to the right side. Remove the first two characters and any leading zeroes from it.
 
 ![Reference-ID](/reference-id.png)
+
+### If you never worked with github
+
+- create a free account
+- click on the edit-button(pencil) on mods.yml
+- make your changes
+- double check indentation(spacing)
+- commit your changes, they will then be in your copy of the repository
+- create a pull request in this repository
