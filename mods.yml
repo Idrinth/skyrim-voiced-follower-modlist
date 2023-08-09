@@ -357,3 +357,18 @@
     race: Orc/Orsimer
     lines: 110
     reference: "0x"
+- name: Yazakh - Custom-Voiced Orc Follower
+  description: A Orc follower mod with over 1000 lines of (mostly) custom-voiced dialogue. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/68568
+  author: RobotPolarBear
+  released: 2022-05-24
+  updated: 2023-07-24
+  adult-only: false
+  version: 1.5.2
+  file: Yazakh.esp
+  followers:
+  - name: Yazakh
+    sex: female
+    race: Orc/Orsimer
+    lines: 1000
+    reference: "0x"
