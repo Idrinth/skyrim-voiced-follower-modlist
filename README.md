@@ -52,5 +52,5 @@ The reference id is the id of the placed actor in the world. if you are in the c
 - click on the edit-button(pencil) on mods.yml
 - make your changes
 - double check indentation(spacing)
-- commit your changes, they will then be in your copy of the repository
+- commit your changes, they will then be in your copy of the repository(place where you store your files)
 - create a pull request in this repository
