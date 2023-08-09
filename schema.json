@@ -1,8 +1,7 @@
 {
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "array",
-  "items": [
-    {
+  "items": {
       "type": "object",
       "properties": {
         "name": {
@@ -52,6 +51,33 @@
                 },
                 "name": {
                   "type": "string"
+                },
+                "interactions": {
+                  "type": "array",
+                  "items": {
+                    "type": "object"
+                    "properties": {
+                      "name": {
+                        "type": "string"
+                      },
+                      "file": {
+                        "type": "string"
+                      },
+                      "commentary": {
+                        "type": "boolean"
+                      },
+                      "dialogue": {
+                        "type": "boolean"
+                      },
+                      "scene": {
+                        "type": "boolean"
+                      }
+                    },
+                    "required": [
+                      "name",
+                      "file"
+                    ]
+                  }
                 }
               },
               "required": [
@@ -62,7 +88,6 @@
                 "name"
               ]
             }
-          ]
         }
       },
       "required": [
