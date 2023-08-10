@@ -47,7 +47,7 @@
                             }
                         }
                     }
-                    mods.item(i).style.display = mayDisplay ? "list-item" : "none";
+                    mods.item(i).style.display = mayDisplay ? "grid" : "none";
                 }
             }
             window.setTimeout(search, 100);
@@ -94,17 +94,7 @@
                   box-shadow: 3px 3px 6px;
                 }
                 .mod {
-                  display: grid !important;
                   grid-template-columns: 1fr 1fr;
-                }
-                .mod > * {
-                  grid-column: 1;
-                }
-                .mod > ul {
-                  grid-row: 1;
-                  grid-column: 2;
-                }
-                body > ul > li {
                   border-bottom: 1px solid #000;
                 }
             }
@@ -126,14 +116,16 @@
         <ul>
             {{#mods}}
             <li class="mod"{{#adult-only}} adult{{/adult-only}} data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
-                <h2><a href="{{link}}" target="_blank">{{name}}</a></h2>
-                <p class="meta">{{author}}: {{version}}@{{file}}</p>
-                <p class="dates">{{dateOnly released}} - {{dateOnly updated}}</p>
-                <p class="description">{{description}}</p>
-                <ul>
+                <div class="mod-data">
+                    <h2><a href="{{link}}" target="_blank">{{name}}</a></h2>
+                    <p class="meta">{{author}}: {{version}}@{{file}}</p>
+                    <p class="dates">{{dateOnly released}} - {{dateOnly updated}}</p>
+                    <p class="description">{{description}}</p>
+                </div>
+                <ul class="followers">
                     {{#followers}}
                     <li class="follower" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
-                        <h3>{{name}}({{race}}, {{sex}})</h3>
+                        <h3>{{name}} ({{race}}, {{sex}})</h3>
                         <p class="lines">{{lines}} Lines</p>
                         <p class="reference">Reference: {{reference}}</p>
                         {{#if interactions}}
