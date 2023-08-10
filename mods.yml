@@ -402,3 +402,18 @@
     race: Redguard
     lines: 10
     reference: "0x5903"
+- name: Lum Blood-Eye
+  description: An albino mage ostracised by his own kind, Lum Blood-Eye has carved out a lonely existence in the icy depths of the Midden. This custom-voiced follower (with ~150 lines of dialogue) yearns to find a home. Will you allow him to join you on your adventures? Will Lum find a home in you? 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/96024
+  author: Aadam and Urgie 
+  released: 2023-07-27
+  updated: 2023-08-01
+  adult-only: false
+  version: 1.3.0
+  file: Lum.esp
+  followers:
+  . name: Lum Blood-Eys
+    sex: male
+    race: Orc/Orsimer
+    lines: 150
+    reference: "0x"
