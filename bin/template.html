@@ -69,10 +69,6 @@
             .meta,.dates {
                 font-size: 80%;
             }
-            body > ul > li {
-                box-shadow: 2px 2px 4px #000;
-                border-radius: 3px;
-            }
             form {
                 text-align: center;
             }
@@ -86,6 +82,31 @@
               border: 1px solid #000;
               border-radius: 1em;
               text-align: center;
+            }
+            @media screen and (min-width: 700px) {
+                form {
+                  display: grid;
+                  grid-template-columns: 1fr 1fr;
+                  position: fixed;
+                  right: 0;
+                  top: 0;
+                  background-color: #fff;
+                  box-shadow: 3px 3px 6px;
+                }
+                .mod {
+                  display: grid !important;
+                  grid-template-columns: 1fr 1fr;
+                }
+                .mod > * {
+                  grid-column: 1;
+                }
+                .mod > ul {
+                  grid-row: 1;
+                  grid-column: 2;
+                }
+                body > ul > li {
+                  border-bottom: 1px solid #000;
+                }
             }
         </style>
     <body>
