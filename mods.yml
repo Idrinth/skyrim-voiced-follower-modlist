@@ -326,7 +326,7 @@
     sex: female
     race: Breton
     lines: 3750
-    reference: "0x"
+    reference: -
 - name: Morgaine - Fully Voiced Standalone Follower
   description: A standalone fully voiced follower for Skyrim SE 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/41027
@@ -432,3 +432,18 @@
     race: Imperial
     lines: 574
     reference: -
+- name: Livia Salvian - Daughter of the High Chancellor - Custom-Voiced Follower
+  description: Livia Salvian is the daughter of the High Chancellor of the Empire. Voiced by the voice actress of Mirai, she has over 500 dialogues. She is an honorable and strong soldier who likes singing, and joins your journey for a very specific reason. Can be married. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/20143
+  author: Miroslav Yegorov and Robyn Rybnik
+  released: 2018-09-24
+  updated: 2018-09-24
+  adult-only: false
+  version: 1.0.0
+  file: LiviaFollower.esp
+  followers:
+  - name: Livia Salvian
+    sex: female
+    race: Imperial
+    lines: 500
+    reference: "0xDA0"
