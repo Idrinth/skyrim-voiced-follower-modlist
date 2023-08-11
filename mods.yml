@@ -417,3 +417,18 @@
     race: Orc/Orsimer
     lines: 150
     reference: "0xFCAC"
+- name: ColdSun's Pantheon - Legends - Astara Cosma - Imperial Librarian - Fully Voiced
+  description: An Imperial Librarian with High-Poly Head, Bodyslide files, custom perks, and custom skills. FOMOD and ESL-Flagged ESP. Supports 3BA, BHUNP, and CBBE. Fully-Voiced by the fantastic KiaraRedVa. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/93354
+  author: coldsun1187 and netherworks
+  released: 2023-06-12
+  updated: 2023-07-10
+  adult-only: true
+  version: 1.1.0
+  file: CS_Astara.esp
+  followers:
+  - name: Astara Cosma
+    sex: female
+    race: Imperial
+    lines: 574
+    reference: -
