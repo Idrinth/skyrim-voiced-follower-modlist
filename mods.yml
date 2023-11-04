@@ -104,6 +104,20 @@
     sex: female
     lines: 1415
     reference: "0x1827"
+- name: Redcap the Riekling
+  description: Riekling follower mod fully voiced by FathomX with interactions with other popular modded followers.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/73441
+  author: FathomX
+  version: 1.4.5
+  released: 2022-08-16
+  updated: 2023-10-16
+  adult-only: false
+  followers:
+  - name: Redcap
+    race: Riekling
+    sex: male
+    lines: 2400
+    reference: 0x
 - name: Bowen - Custom voiced follower
   description: Bowen is a custom voiced, standalone follower who specializes in supporting you and other followers. He will sell your loot, share supplies with your followers and even heal you. Just don't expect him to clean your windows. He is essential and will not count towards your follower limit.  
   link: https://www.nexusmods.com/skyrimspecialedition/mods/62733
