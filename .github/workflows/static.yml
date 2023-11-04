@@ -28,7 +28,7 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v2
         with:
-          path: './styles'
+          path: './deploy'
       - name: Deploy to GitHub Pages
         id: deployment
         uses: actions/styles-pages@v2
