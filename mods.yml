@@ -112,6 +112,7 @@
   released: 2022-08-16
   updated: 2023-10-16
   adult-only: false
+  file: FA01RedcapFollower.esp
   followers:
   - name: Redcap
     race: Riekling
@@ -461,3 +462,17 @@
     race: Imperial
     lines: 500
     reference: "0xDA0"
+- name: Konnor A Voiced Follower
+  description: Adds a voiced follower to the old ruined home near Fort Greymoor.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/63045
+  author: BruvRamm
+  released: 2022-02-04
+  updated: 2022-08-02
+  adult-only: false
+  version: 1.0.0
+  file: BR10KonnorFollower.esp
+  followers:
+  - name: Konnor
+    race: Nord
+    lines: 19
+    reference: -
