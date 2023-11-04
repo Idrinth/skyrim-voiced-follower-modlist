@@ -48,6 +48,8 @@ The reference id is the id of the placed actor in the world. if you are in the c
 
 ### If you never worked with github
 
+![Edit-Button](/edit-button.png)
+
 - create a free account
 - click on the edit-button(pencil) on mods.yml
 - make your changes
