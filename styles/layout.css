@@ -1,0 +1,30 @@
+h1, h2, h3 {
+    margin:0;
+    padding: 1em 0;
+}
+p {
+    margin: 0;
+    padding: 0.2em;
+}
+li ul {
+    display: flex;
+    padding: 0;
+    margin: 0;
+}
+.follower {
+    width: 25%;
+    border-radius: 1em;
+}
+@media screen and (min-width: 700px) {
+    form {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        position: fixed;
+        right: 0;
+        top: 0;
+    }
+    .mod {
+        grid-template-columns: 1fr 1fr;
+        margin-bottom: 5px;
+    }
+}

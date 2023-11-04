@@ -1,0 +1,37 @@
+body {
+    color: #fff;
+    background-color: #555;
+}
+a {
+    color: #fff
+}
+h1, h2, h3 {
+    font-weight: bold;
+    text-align: center;
+}
+li {
+    list-style: none;
+}
+.meta,.dates {
+    font-size: 80%;
+}
+form {
+    text-align: center;
+}
+.follower {
+    border: 1px solid #000;
+    text-align: center;
+}
+@media screen and (min-width: 700px) {
+    form {
+        background-color: #444;
+        box-shadow: 3px 3px 6px;
+    }
+    .follower {
+        background-color: #444
+    }
+    .mod {
+        border-bottom: 1px solid #000;
+        box-shadow: 5px 5px 5px #ccc;
+    }
+}

@@ -1,6 +1,5 @@
 {
   "require": {
-    "idrinth/config-check": "dev-master",
-    "idrinth/yaml-facade": "dev-master"
+    "idrinth/config-check": "dev-master"
   }
 }
