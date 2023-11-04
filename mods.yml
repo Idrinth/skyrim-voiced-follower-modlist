@@ -476,3 +476,17 @@
     race: Nord
     lines: 19
     reference: -
+- name: Drog gro-Dan (Orc and Axe Story) Fully Voiced Warrior
+  description: The Mod add a new Voiced Orc-follower. He is a Warrior with Axe. Honest, vise, brave and powerful. 
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/60754
+  author: Nibiros13
+  released: 2021-12-25
+  updated: 2021-12-25
+  adult-only: true
+  version: 3.0.0
+  file: DrogGroDan.esp
+  followers:
+  - name: Drog gro-Dan
+    race: Orsimer/Orc
+    lines: 136
+    reference: 0x0
