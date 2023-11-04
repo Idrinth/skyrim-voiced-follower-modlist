@@ -22,11 +22,13 @@ handlebars.registerHelper('lowerCase', function (string) {
     return `${string}`.toLowerCase();
 });
 fs.mkdirSync(__dirname + '/../deploy');
-for (const style in ['design.css', 'reset.css', 'layout.css']) {
+const hashes = {};
+for (const style of ['design.css', 'reset.css', 'layout.css']) {
     fs.writeFileSync(
         __dirname + '/../deploy/' + style,
         fs.readFileSync(__dirname + '/../styles/' + style, 'utf8')
     );
+    hashes[style.replace(/\.css$/, '') + 'Hash'] = fileHash(style);
 }
 yaml.parseFile('mods.yml', function (mods) {
     mods = mods.sort((a, b) => {
@@ -48,9 +50,7 @@ yaml.parseFile('mods.yml', function (mods) {
         __dirname + '/../deploy/index.html',
         handlebars.compile(fs.readFileSync(__dirname + '/template.html', 'utf8'))({
             mods,
-            layoutHash: fileHash('layout.css'),
-            resetHash: fileHash('reset.css'),
-            designHash: fileHash('design.css')
+            hashes,
         })
     );
 });
