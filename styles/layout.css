@@ -15,9 +15,12 @@ li ul {
     width: 25%;
     border-radius: 1em;
 }
+form {
+    display: grid;
+    grid-template-columns: 1fr;
+}
 @media screen and (min-width: 700px) {
     form {
-        display: grid;
         grid-template-columns: 1fr 1fr;
         position: fixed;
         right: 0;
