@@ -17,6 +17,7 @@ li ul {
 }
 form {
     display: block;
+    padding: 0.5em;
 }
 fieldset {
     display: grid;
@@ -26,7 +27,18 @@ fieldset {
     fieldset {
         grid-template-columns: 1fr 1fr;
     }
+    fieldset > label,
+    fieldset > select,
+    fieldset > input {
+        display: none;
+    }
+    fieldset:hover > label,
+    fieldset:hover > select,
+    fieldset:hover > input {
+        display: block;
+    }
     form {
+        padding: 0;
         position: fixed;
         right: 0;
         top: 0;
