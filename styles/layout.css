@@ -16,12 +16,17 @@ li ul {
     border-radius: 1em;
 }
 form {
+    display: block;
+}
+fieldset {
     display: grid;
     grid-template-columns: 1fr;
 }
 @media screen and (min-width: 700px) {
-    form {
+    fieldset {
         grid-template-columns: 1fr 1fr;
+    }
+    form {
         position: fixed;
         right: 0;
         top: 0;
