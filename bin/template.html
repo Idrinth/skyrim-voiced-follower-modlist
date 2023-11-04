@@ -21,7 +21,7 @@
                 <option>Female</option>
             </select>
             <label for="adult">Show adult mods</label><input type="checkbox" onchange="search()" id="adult"/>
-            <label for="xbox">Has XBOx Version</label><input type="checkbox" onchange="search()" id="xbox"/>
+            <label for="xbox">Has XBox Version</label><input type="checkbox" onchange="search()" id="xbox"/>
         </form>
         <ul>
             {{#mods}}
@@ -80,14 +80,14 @@
                     if (sex !== 'either' && sex !== followers.item(i).getAttribute('data-sex')) {
                         mayDisplay = false;
                     }
-                    if (!followers.item(i).hasAttribute('xbox') && hasXBox) {
-                        mayDisplay = false;
-                    }
                     followers.item(i).style.display = mayDisplay ? "list-item" : "none";
                 }
                 for (let i = 0; i < mods.length; i++) {
                     let mayDisplay = mods.item(i).getAttribute('data-mod').includes(mod);
                     if (mods.item(i).hasAttribute('adult') && !adult) {
+                        mayDisplay = false;
+                    }
+                    if (!mods.item(i).hasAttribute('xbox') && hasXBox) {
                         mayDisplay = false;
                     }
                     if (mayDisplay) {
