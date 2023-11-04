@@ -1,6 +1,6 @@
 # Skyrim Voiced Follower Modlist
 
-A list of all voiced followers in skyrim, including the ID and file-name required to do patchless interactions
+A list of all voiced followers in Skyrim, including the ID and file-name required to do patchless interactions
 
 ## Conditions for inclusion
 
@@ -22,6 +22,7 @@ If a follower is missing just add the following information to mods.yml or open 
   description: This follower, trainer, questgiver and merchant is a male Altmer, focussing on Restoration magic and twohanded, elven swords. Comes with custom dialogue and patrols the world! 
   author: Björn "Idrinth" Büttner
   adult-only: false
+  xbox: false
   version: 0.54.1
   released: 2022-06-08
   updated: 2023-07-23

@@ -21,10 +21,11 @@
                 <option>Female</option>
             </select>
             <label for="adult">Show adult mods</label><input type="checkbox" onchange="search()" id="adult"/>
+            <label for="xbox">Has XBOx Version</label><input type="checkbox" onchange="search()" id="xbox"/>
         </form>
         <ul>
             {{#mods}}
-            <li class="mod"{{#adult-only}} adult{{/adult-only}} data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
+            <li class="mod"{{#adult-only}} adult{{/adult-only}} {{#xbox}} xbox{{/xbox}} data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
                 <div class="mod-data">
                     <h2><a href="{{link}}" target="_blank">{{name}}</a></h2>
                     <p class="meta">{{author}}: {{version}}@{{file}}</p>
@@ -56,6 +57,7 @@
                 const lines = Number.parseInt(document.getElementById("lines").value);
                 const sex = document.getElementById("sex").value.toLowerCase();
                 const adult = document.getElementById('adult').checked;
+                const hasXBox = document.getElementById('xbox').checked;
                 const interacts = document.getElementById('interacts').value.toLowerCase();
 
                 const mods = document.getElementsByClassName("mod");
@@ -76,6 +78,9 @@
                         mayDisplay = false;
                     }
                     if (sex !== 'either' && sex !== followers.item(i).getAttribute('data-sex')) {
+                        mayDisplay = false;
+                    }
+                    if (!mods.item(i).hasAttribute('xbox') && hasXBox) {
                         mayDisplay = false;
                     }
                     followers.item(i).style.display = mayDisplay ? "list-item" : "none";
