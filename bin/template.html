@@ -80,7 +80,7 @@
                     if (sex !== 'either' && sex !== followers.item(i).getAttribute('data-sex')) {
                         mayDisplay = false;
                     }
-                    if (!mods.item(i).hasAttribute('xbox') && hasXBox) {
+                    if (!followers.item(i).hasAttribute('xbox') && hasXBox) {
                         mayDisplay = false;
                     }
                     followers.item(i).style.display = mayDisplay ? "list-item" : "none";
