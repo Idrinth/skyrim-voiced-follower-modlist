@@ -5,7 +5,7 @@ const crypto = require('crypto');
 
 const fileHash = (file) => {
     const hash = crypto.createHash('md5');
-    hash.update(fs.readSync(__dirname + '/../styles/' + file, 'utf8'));
+    hash.update(fs.readFileSync(__dirname + '/../styles/' + file, 'utf8'));
     return hash.digest('hex');
 }
 handlebars.registerHelper('dateOnly', function (date) {
