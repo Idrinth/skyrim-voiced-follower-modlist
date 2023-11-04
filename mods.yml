@@ -341,7 +341,7 @@
     sex: female
     race: Breton
     lines: 3750
-    reference: -
+    reference: "-"
 - name: Morgaine - Fully Voiced Standalone Follower
   description: A standalone fully voiced follower for Skyrim SE 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/41027
@@ -427,7 +427,7 @@
   version: 1.3.0
   file: Lum.esp
   followers:
-  . name: Lum Blood-Eys
+  - name: Lum Blood-Eye
     sex: male
     race: Orc/Orsimer
     lines: 150
@@ -446,7 +446,7 @@
     sex: female
     race: Imperial
     lines: 574
-    reference: -
+    reference: "-"
 - name: Livia Salvian - Daughter of the High Chancellor - Custom-Voiced Follower
   description: Livia Salvian is the daughter of the High Chancellor of the Empire. Voiced by the voice actress of Mirai, she has over 500 dialogues. She is an honorable and strong soldier who likes singing, and joins your journey for a very specific reason. Can be married. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/20143
@@ -475,7 +475,7 @@
   - name: Konnor
     race: Nord
     lines: 19
-    reference: -
+    reference: "-"
 - name: Drog gro-Dan (Orc and Axe Story) Fully Voiced Warrior
   description: The Mod add a new Voiced Orc-follower. He is a Warrior with Axe. Honest, vise, brave and powerful. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/60754
