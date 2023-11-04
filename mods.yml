@@ -150,6 +150,22 @@
     sex: male
     lines: 5000
     reference: "0x591F"
+- name: The Thalmor's Shadow - Taliesin (Custom Voiced Follower)
+  description: Adds a custom voiced (VA - Pat Mahoney) Thalmor follower to your Skyrim. A former member of the Thalmor wants a clean start, and only you can save him from his past life. Why do you always fall for the broken ones?
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/93413
+  version: 1.0.2
+  author: Vanessa M and Pat Mahoney
+  released: 2023-06-15
+  updated: 2023-07-21
+  adult-only: false
+  xbox: false
+  file: 00Taliesin.esp
+  followers:
+    - name: Taliesin
+      race: Altmer/High Elf
+      sex: male
+      lines: 1000
+      reference: "-"
 - name: Flint v2.0 - The Custom Voiced Minotaur Follower
   description: Have you ever wanted a big, masculine follower, but mods like Kaidan or Hoth just aren't quite your style? Well, search no longer, as you've found Flint, the barbaric minotaur follower! With his massive hammer and "friendly" attutide, he's prepared for anything you throw at him in the world of Skyrim. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/87294
