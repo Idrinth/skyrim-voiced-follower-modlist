@@ -121,6 +121,21 @@
     sex: male
     lines: 78
     reference: "0x"
+- name: Gabriel Greycastle - A Fully Voiced Follower Mod
+  description: Gabriel Greycastle is a Work-In-Progress (Still currently Fully Voiced Though) follower mod introducing Gabriel Greycastle, the Stendarr following Dawnguard member to the Bee and Barb in Riften for you to travel with!
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/51395
+  author: VampiricStudios
+  version: 0.9.4
+  released: 2021-06-20
+  updated: 2021-06-20
+  adult-only: true
+  file: GT17Follower1.esp
+  followers:
+  - name: Gabriel Greycastle
+    race: Imperial
+    sex: male
+    lines: 70
+    reference: "0x"
 - name: Redcap the Riekling
   description: Riekling follower mod fully voiced by FathomX with interactions with other popular modded followers.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/73441
