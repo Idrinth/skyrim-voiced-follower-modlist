@@ -5,7 +5,7 @@ const crypto = require('crypto');
 
 const fileHash = (file) => {
     const hash = crypto.createHash('md5');
-    hash.update(fs.readFileSync(__dirname + '/../styles/' + file, 'utf8'));
+    hash.update(fs.readFileSync(__dirname + '/../resources/styles/' + file, 'utf8'));
     return hash.digest('hex');
 }
 handlebars.registerHelper('dateOnly', function (date) {
@@ -24,10 +24,14 @@ const hashes = {};
 for (const style of ['design.css', 'reset.css', 'layout.css']) {
     fs.writeFileSync(
         __dirname + '/../deploy/' + style,
-        fs.readFileSync(__dirname + '/../styles/' + style, 'utf8')
+        fs.readFileSync(__dirname + '/../resources/styles/' + style, 'utf8')
     );
     hashes[style.replace(/\.css$/, '') + 'Hash'] = fileHash(style);
 }
+fs.writeFileSync(
+    __dirname + '/../deploy/favicon.ico',
+    fs.readFileSync(__dirname + '/../resources/favicon.ico')
+);
 yaml.parseFile('mods.yml', function (mods) {
     mods = mods.sort((a, b) => {
         if (a.updated.getTime() > b.updated.getTime()) {
@@ -46,7 +50,7 @@ yaml.parseFile('mods.yml', function (mods) {
     });
     fs.writeFileSync(
         __dirname + '/../deploy/index.html',
-        handlebars.compile(fs.readFileSync(__dirname + '/template.html', 'utf8'))({
+        handlebars.compile(fs.readFileSync(__dirname + '/../resources/template.html', 'utf8'))({
             mods,
             hashes,
         })
