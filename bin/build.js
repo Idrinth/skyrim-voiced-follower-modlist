@@ -28,6 +28,7 @@ for (const style of ['design.css', 'reset.css', 'layout.css']) {
     );
     hashes[style.replace(/\.css$/, '') + 'Hash'] = fileHash(style);
 }
+console.log(hashes);
 yaml.parseFile('mods.yml', function (mods) {
     mods = mods.sort((a, b) => {
         if (a.updated.getTime() > b.updated.getTime()) {
