@@ -15,6 +15,7 @@
                 <label for="mod">Mod Name</label><input onkeyup="search()" type="text" placeholder="Mod" id="mod">
                 <label for="follower">Follower Name</label><input onkeyup="search()" type="text" placeholder="Follower" id="follower">
                 <label for="interacts">Interacts with Follower</label><input onkeyup="search()" type="text" placeholder="Follower" id="interacts">
+                <label for="quest">Comments on Quest</label><input onkeyup="search()" type="text" placeholder="Quest" id="quest">
                 <label for="race">Race</label><input onkeyup="search()" type="text" placeholder="Race" id="race">
                 <label for="lines">Minimum lines</label><input onkeyup="search()" type="number" value="0" min="0" max="1000000" id="lines">
                 <label for="sex">Sex</label><select onchange="search()" id="sex">
@@ -37,12 +38,15 @@
                 </div>
                 <ul class="followers">
                     {{#followers}}
-                    <li class="follower" data-interacts="{{#each interactions}} {{lowerCase name}}{{/each}}" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
+                    <li class="follower" data-interacts="{{#each interactions}} {{lowerCase name}}{{/each}}" data-quest="{{#each quest}} {{lowerCase this}}{{/each}}" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
                         <h3>{{name}} ({{race}}, {{sex}})</h3>
                         <p class="lines">{{lines}} Lines</p>
                         <p class="reference">Reference: {{reference}}</p>
                         {{#if interactions}}
-                            <p class="interactions" title="Interacts with{{#each interactions}}{{linebreak}}- {{name}} in {{file}}{{#commentary}}{{linebreak}}  - commentary{{/commentary}}{{#scene}}{{linebreak}}  - scenes{{/scene}}{{#dialogue}}{{linebreak}}  - modified dialogue{{/dialogue}}{{/each}}">Interactions: {{interactions.length}}</p>
+                        <p class="interactions" title="Interacts with{{#each interactions}}{{linebreak}}- {{name}} in {{file}}{{#commentary}}{{linebreak}}  - commentary{{/commentary}}{{#scene}}{{linebreak}}  - scenes{{/scene}}{{#dialogue}}{{linebreak}}  - modified dialogue{{/dialogue}}{{/each}}">Interactions: {{interactions.length}}</p>
+                        {{/if}}
+                        {{#if quests}}
+                        <p class="quests" title="Comments on{{#each quests}}{{linebreak}}- {{this}}{{/each}}">Quest Comments: {{quests.length}}</p>
                         {{/if}}
                     </li>
                     {{/followers}}
@@ -62,6 +66,7 @@
                 const adult = document.getElementById('adult').checked;
                 const hasXBox = document.getElementById('xbox').checked;
                 const interacts = document.getElementById('interacts').value.toLowerCase();
+                const quest = document.getElementById('quest').value.toLowerCase();
 
                 const mods = document.getElementsByClassName("mod");
                 const followers = document.getElementsByClassName("follower");
@@ -74,6 +79,9 @@
                         mayDisplay = false;
                     }
                     if (!followers.item(i).getAttribute('data-interacts').includes(interacts)) {
+                        mayDisplay = false;
+                    }
+                    if (!followers.item(i).getAttribute('data-quest').includes(quest)) {
                         mayDisplay = false;
                     }
                     const lns = Number.parseInt(followers.item(i).getAttribute('data-lines'));

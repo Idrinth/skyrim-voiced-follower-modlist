@@ -19,6 +19,8 @@
       scene: true
       commentary: true
       dialogue: false
+    quests:
+    - First Lessons
 - name: Idrinth's Speaking Weapons
   link: https://www.nexusmods.com/skyrimspecialedition/mods/77822
   file: idrinthSpeakingWeapons.esp

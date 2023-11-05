@@ -38,6 +38,8 @@ If a follower is missing just add the following information to mods.yml or open 
       scene: true
       commentary: true
       dialogue: true
+    quests:
+    - Example Quest Name
 ```
 
 ### Reference-ID
