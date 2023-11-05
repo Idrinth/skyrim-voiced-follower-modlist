@@ -38,7 +38,7 @@
                 </div>
                 <ul class="followers">
                     {{#followers}}
-                    <li class="follower" data-interacts="{{#each interactions}} {{lowerCase name}}{{/each}}" data-quest="{{#each quest}} {{lowerCase this}}{{/each}}" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
+                    <li class="follower" data-interacts="{{#each interactions}} {{lowerCase name}}{{/each}}" data-quest="{{#each quests}} {{lowerCase this}}{{/each}}" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
                         <h3>{{name}} ({{race}}, {{sex}})</h3>
                         <p class="lines">{{lines}} Lines</p>
                         <p class="reference">Reference: {{reference}}</p>
