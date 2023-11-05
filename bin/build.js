@@ -26,7 +26,7 @@ for (const style of ['design.css', 'reset.css', 'layout.css']) {
         __dirname + '/../deploy/' + style,
         fs.readFileSync(__dirname + '/../resources/styles/' + style, 'utf8')
     );
-    hashes[style.replace(/\.css$/, '') + 'Hash'] = fileHash(style);
+    hashes[style.replace(/\.css$/, '')] = fileHash(style);
 }
 fs.writeFileSync(
     __dirname + '/../deploy/favicon.ico',
