@@ -79,6 +79,12 @@
                     ]
                   }
                 }
+                "quests": {
+                  "type": "array",
+                  "items": {
+                    "type": "string"
+                  }
+                }
               },
               "required": [
                 "race",
@@ -88,6 +94,7 @@
                 "name"
               ]
             }
+          ]
         }
       },
       "required": [

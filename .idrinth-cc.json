@@ -13,7 +13,7 @@
     "yaml": {
         "validity": true,
         "mapping": {
-            ".yml": "cwd://schema.json"
+            "mods.yml": "cwd://schema.json"
         },
         "additional-extensions": ["yml"]
     }
