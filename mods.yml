@@ -131,11 +131,26 @@
   adult-only: true
   file: GT17Follower1.esp
   followers:
-  - name: Gabriel Greycastle
-    race: Imperial
-    sex: male
-    lines: 70
-    reference: "0x"
+    - name: Gabriel Greycastle
+      race: Imperial
+      sex: male
+      lines: 70
+      reference: "0x"
+- name: Inigo
+  description: Inigo is a fully voiced khajiit adventuring companion with over 7000 lines of unique dialogue - much of it about you. He'll level alongside you and avoid most traps. If you're sneaking he won't chatter and he'll whisper if you talk to him. He can run out of arrows. He's highly skilled in archery, one-handed, and sneak.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/1461
+  author: Smartbluecat
+  version: 2.4c
+  released: 2016-11-14
+  updated: 2016-11-24
+  adult-only: false
+  file: Inigo.esp
+  followers:
+    - name: Inigo
+      race: Khajiit
+      sex: male
+      lines: 7000
+      reference: "0x"
 - name: Redcap the Riekling
   description: Riekling follower mod fully voiced by FathomX with interactions with other popular modded followers.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/73441
