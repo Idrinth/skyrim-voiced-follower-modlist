@@ -12,7 +12,7 @@ li ul {
     margin: 0;
 }
 .follower {
-    width: 25%;
+    width: 50%;
     border-radius: 1em;
 }
 form {
@@ -46,5 +46,13 @@ fieldset {
     .mod {
         grid-template-columns: 1fr 1fr;
         margin-bottom: 5px;
+    }
+    .follower {
+        width: 33%;
+    }
+}
+@media screen and (min-width: 1000px) {
+    .follower {
+        width: 25%;
     }
 }
