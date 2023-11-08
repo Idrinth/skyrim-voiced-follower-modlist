@@ -554,3 +554,48 @@
     race: Orsimer/Orc
     lines: 136
     reference: 0x0
+- name: Isadore Custom Voiced Male Bosmer
+    link: https://www.nexusmods.com/skyrimspecialedition/mods/79423
+    file: 0Isadore.esp
+    description: Isadore is a Custom Voiced follower who comments on quests, areas, weather, and much more. He can be found Inside Dragon Bridge Four Shields Tavern. 
+    author: NocturneDragoon
+    adult-only: false
+    xbox: True
+    version: 1.9.3
+    released: 2022-11-25
+    updated: 2023-10-04
+    followers:
+  - name: Isadore
+    race: Wood Elf / Bosmer
+    sex: male
+    lines: 1000
+    reference: "0x05342BC9"
+    - name: Isaerion
+    race: Wood Elf / Bosmer
+    sex: male
+    lines: 400
+    reference: "0x05360A3B"
+    interactions:
+    - name: Bowen, Idrinth, Eefin 
+      scene: true
+      commentary: false
+      dialogue: true
+    quests:
+    - Personal quest initiated by talking to Isadore each day.
+ - name: Tezya Custom Voiced Male Altmer Companion
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/101301
+  file: 0Tezya.esp
+  description: 
+  author: NocturneDragoon
+  adult-only: false
+  xbox: True
+  version: 1.9.3
+  released: 2023-09-25
+  updated: 2023-09-29
+  followers:
+  - name: Tezya
+    race: High Elf
+    sex: male
+    lines: 1000
+    reference: "0x05342BC9"
+
