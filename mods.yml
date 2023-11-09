@@ -565,30 +565,38 @@
     released: 2022-11-25
     updated: 2023-10-04
     followers:
-  - name: Isadore
-    race: Wood Elf / Bosmer
-    sex: male
-    lines: 1000
-    reference: "0x05342BC9"
+    - name: Isadore
+      race: Wood Elf / Bosmer
+      sex: male
+      lines: 1000
+      reference: "0x05342BC9"
+      interactions:
+      - name: Bowen 
+        scene: true
+        commentary: false
+        dialogue: true
+      - name: Idrinth 
+        scene: true
+        commentary: false
+        dialogue: true
+      - name: Eefin 
+        scene: true
+        commentary: false
+        dialogue: true
     - name: Isaerion
-    race: Wood Elf / Bosmer
-    sex: male
-    lines: 400
-    reference: "0x05360A3B"
-    interactions:
-    - name: Bowen, Idrinth, Eefin 
-      scene: true
-      commentary: false
-      dialogue: true
+      race: Wood Elf / Bosmer
+      sex: male
+      lines: 400
+      reference: "0x05360A3B"
     quests:
     - Personal quest initiated by talking to Isadore each day.
- - name: Tezya Custom Voiced Male Altmer Companion
+- name: Tezya Custom Voiced Male Altmer Companion
   link: https://www.nexusmods.com/skyrimspecialedition/mods/101301
   file: 0Tezya.esp
   description: 
   author: NocturneDragoon
   adult-only: false
-  xbox: True
+  xbox: true
   version: 1.9.3
   released: 2023-09-25
   updated: 2023-09-29
@@ -597,5 +605,5 @@
     race: High Elf
     sex: male
     lines: 1000
-    reference: "0x05342BC9"
+    reference: "0x05B42B2A"
 
