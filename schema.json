@@ -2,113 +2,112 @@
   "$schema": "http://json-schema.org/draft-04/schema#",
   "type": "array",
   "items": {
-      "type": "object",
-      "properties": {
-        "name": {
-          "type": "string"
-        },
-        "link": {
-          "type": "string"
-        },
-        "file": {
-          "type": "string"
-        },
-        "description": {
-          "type": "string"
-        },
-        "author": {
-          "type": "string"
-        },
-        "adult-only": {
-          "type": "boolean"
-        },
-        "version": {
-          "type": "string"
-        },
-        "released": {
-          "type": "string"
-        },
-        "updated": {
-          "type": "string"
-        },
-        "followers": {
-          "type": "array",
-          "items": [
-            {
-              "type": "object",
-              "properties": {
-                "race": {
-                  "type": "string"
-                },
-                "sex": {
-                  "type": "string"
-                },
-                "reference": {
-                  "type": "integer"
-                },
-                "lines": {
-                  "type": "integer"
-                },
-                "name": {
-                  "type": "string"
-                },
-                "interactions": {
-                  "type": "array",
-                  "items": {
-                    "type": "object"
-                    "properties": {
-                      "name": {
-                        "type": "string"
-                      },
-                      "file": {
-                        "type": "string"
-                      },
-                      "commentary": {
-                        "type": "boolean"
-                      },
-                      "dialogue": {
-                        "type": "boolean"
-                      },
-                      "scene": {
-                        "type": "boolean"
-                      }
+    "type": "object",
+    "properties": {
+      "name": {
+        "type": "string"
+      },
+      "link": {
+        "type": "string"
+      },
+      "file": {
+        "type": "string"
+      },
+      "description": {
+        "type": "string"
+      },
+      "author": {
+        "type": "string"
+      },
+      "adult-only": {
+        "type": "boolean"
+      },
+      "version": {
+        "type": "string"
+      },
+      "released": {
+        "type": "string"
+      },
+      "updated": {
+        "type": "string"
+      },
+      "followers": {
+        "type": "array",
+        "items": [
+          {
+            "type": "object",
+            "properties": {
+              "race": {
+                "type": "string"
+              },
+              "sex": {
+                "type": "string"
+              },
+              "reference": {
+                "type": "integer"
+              },
+              "lines": {
+                "type": "integer"
+              },
+              "name": {
+                "type": "string"
+              },
+              "interactions": {
+                "type": "array",
+                "items": {
+                  "type": "object",
+                  "properties": {
+                    "name": {
+                      "type": "string"
                     },
-                    "required": [
-                      "name",
-                      "file"
-                    ]
-                  }
-                }
-                "quests": {
-                  "type": "array",
-                  "items": {
-                    "type": "string"
-                  }
+                    "file": {
+                      "type": "string"
+                    },
+                    "commentary": {
+                      "type": "boolean"
+                    },
+                    "dialogue": {
+                      "type": "boolean"
+                    },
+                    "scene": {
+                      "type": "boolean"
+                    }
+                  },
+                  "required": [
+                    "name",
+                    "file"
+                  ]
                 }
               },
-              "required": [
-                "race",
-                "sex",
-                "reference",
-                "lines",
-                "name"
-              ]
-            }
-          ]
-        }
-      },
-      "required": [
-        "name",
-        "link",
-        "file",
-        "description",
-        "author",
-        "adult-only",
-        "version",
-        "released",
-        "updated",
-        "followers"
-      ]
-    }
-  ]
+              "quests": {
+                "type": "array",
+                "items": {
+                  "type": "string"
+                }
+              }
+            },
+            "required": [
+              "race",
+              "sex",
+              "reference",
+              "lines",
+              "name"
+            ]
+          }
+        ]
+      }
+    },
+    "required": [
+      "name",
+      "link",
+      "file",
+      "description",
+      "author",
+      "adult-only",
+      "version",
+      "released",
+      "updated",
+      "followers"
+    ]
+  }
 }
