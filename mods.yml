@@ -4,18 +4,18 @@
   description: This follower, trainer, questgiver and merchant is a male Altmer, focussing on Restoration magic and twohanded, elven swords. Comes with custom dialogue and patrols the world! 
   author: Björn "Idrinth" Büttner
   adult-only: false
-  version: 0.54.1
+  version: 0.55.4
   released: 2022-06-08
-  updated: 2023-07-23
+  updated: 2023-09-13
   followers:
   - race: High Elf/Altmer
     sex: male
     reference: "0x803"
-    lines: 1837
+    lines: 2187
     name: Idrinth Thalui
     interactions:
-    - name: Serana
-      file: Dawnguard.esm
+    - name: Isadore
+      file: 0Isadore.esp
       scene: true
       commentary: true
       dialogue: false
