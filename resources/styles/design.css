@@ -22,6 +22,14 @@ form {
     border: 1px solid #000;
     text-align: center;
 }
+body > ul {
+    padding: 8px;
+}
+.mod {
+   border-color: #ccc;
+   border-radius: 4px;
+   margin-bottom: 10px;
+}
 @media screen and (min-width: 700px) {
     form {
         background-color: #444;
@@ -31,7 +39,6 @@ form {
         background-color: #444
     }
     .mod {
-        border-bottom: 1px solid #000;
         box-shadow: 5px 5px 5px #ccc;
     }
 }

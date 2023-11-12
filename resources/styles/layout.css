@@ -1,3 +1,7 @@
+html, body {
+    min-height: 100%;
+    width: 100%;
+}
 h1, h2, h3 {
     margin:0;
     padding: 1em 0;
@@ -22,6 +26,9 @@ form {
 fieldset {
     display: grid;
     grid-template-columns: 1fr;
+}
+.mod {
+    border: 1px solid;
 }
 @media screen and (min-width: 700px) {
     fieldset {
