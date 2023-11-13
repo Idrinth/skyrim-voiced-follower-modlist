@@ -110,7 +110,7 @@
             if (!followers.item(i).getAttribute('data-quest').includes(quest)) {
                 mayDisplay = false;
             }
-            if (personalQuest && !followers.item(i).hastAtribute('data-personal-quest')) {
+            if (personalQuest && !followers.item(i).hasAttribute('data-personal-quest')) {
                 mayDisplay = false;
             }
             const lns = Number.parseInt(followers.item(i).getAttribute('data-lines'));
