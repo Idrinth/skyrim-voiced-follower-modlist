@@ -13,13 +13,13 @@
             modEL.value ? 'mod-' + modEL.value : null,
             followerEL.value ? 'follower-' + followerEL.value : null,
             raceEL.value ? 'race-' + raceEL.value : null,
-            linesEL.value ? 'lines-' + linesEL.value : null,
-            sexEL.value ? 'mod-' + sexEL.value : null,
+            linesEL.value !== "0" ? 'lines-' + linesEL.value : null,
+            sexEL.value.toLowerCase() !== "either" ? 'sex-' + sexEL.value : null,
             adultEL.checked ? 'adult' : null,
             hasXBoxEL.checked ? 'xbox' : null,
             interactsEL.value ? 'interacts-' + interactsEL.value : null,
             questEL.value ? 'quest-' + questEL.value : null,
-        ].join('|')
+        ].filter(val => val).join('|')
     }
     const parseHash = (hash) => {
         adultEL.checked = false;
