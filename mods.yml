@@ -12,6 +12,7 @@
     sex: male
     reference: "0x803"
     lines: 2187
+    quest: true
     name: Idrinth Thalui
     interactions:
     - name: Isadore

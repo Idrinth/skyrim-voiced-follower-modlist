@@ -25,11 +25,12 @@
                 </select>
                 <label for="adult">Show adult mods</label><input type="checkbox" id="adult"/>
                 <label for="xbox">Has XBox Version</label><input type="checkbox" id="xbox"/>
+                <label for="personal-quest">Has personal Quest</label><input type="checkbox" id="personal-quest"/>
             </fieldset>
         </form>
         <ul>
             {{#mods}}
-            <li class="mod"{{#adult-only}} adult{{/adult-only}} {{#xbox}} xbox{{/xbox}} data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
+            <li class="mod"{{#adult-only}} data-adult{{/adult-only}} {{#xbox}} data-xbox{{/xbox}} data-mod="{{lowerCase name}}" data-file="{{lowerCase file}}" data-author="{{lowerCase author}}" data-updated="{{dateOnly updated}}" data-released="{{dateOnly released}}">
                 <div class="mod-data">
                     <h2><a href="{{link}}" target="_blank">{{name}}</a></h2>
                     <p class="meta">{{author}}: {{version}}@{{file}}</p>
@@ -38,7 +39,7 @@
                 </div>
                 <ul class="followers">
                     {{#followers}}
-                    <li class="follower" data-interacts="{{#each interactions}} {{lowerCase name}}{{/each}}" data-quest="{{#each quests}} {{lowerCase this}}{{/each}}" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
+                    <li class="follower" {{#quest}} data-personal-quest{{/quest}} data-interacts="{{#each interactions}} {{lowerCase name}}{{/each}}" data-quest="{{#each quests}} {{lowerCase this}}{{/each}}" data-name="{{lowerCase name}}" data-lines="{{lines}}" data-race="{{lowerCase race}}" data-sex="{{lowerCase sex}}">
                         <h3>{{name}} ({{race}}, {{sex}})</h3>
                         <p class="lines">{{lines}} Lines</p>
                         <p class="reference">Reference: {{reference}}</p>
@@ -46,7 +47,7 @@
                         <p class="interactions" data-title="interactions-{{lowerCase name}}">Interactions: {{interactions.length}}</p>
                         <div class="title" id="interactions-{{lowerCase name}}">
                             <p>Interacts with<ul>{{#each interactions}}
-                            <li>{{name}} in <a href="#file-{{lowerCase file}}">{{file}}</a><ul>
+                            <li>{{name}} in {{file}}<ul>
                                 {{#commentary}}{{linebreak}}<li>commentary</li>{{/commentary}}{{#scene}}<li>scenes</li>{{/scene}}{{#dialogue}}<li>modified dialogue</li>{{/dialogue}}</ul></li>
                             {{/each}}</ul>
                         </div>

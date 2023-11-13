@@ -8,6 +8,7 @@
     const hasXBoxEL = document.getElementById('xbox');
     const interactsEL = document.getElementById('interacts');
     const questEL = document.getElementById('quest');
+    const personalQuestEL = document.getElementById('personal-quest');
     const getHash = () => {
         return [
             modEL.value ? 'mod-' + modEL.value : null,
@@ -19,6 +20,7 @@
             hasXBoxEL.checked ? 'xbox' : null,
             interactsEL.value ? 'interacts-' + interactsEL.value : null,
             questEL.value ? 'quest-' + questEL.value : null,
+            personalQuestEL.checked ? 'personal_quest' : null,
         ].filter(val => val).join('|')
     }
     const parseHash = (hash) => {
@@ -32,6 +34,7 @@
         sexEL.selectedIndex = 0;
         interactsEL.value = "";
         questEL.value = "";
+        personalQuestEL.checked = false;
         for (const element in hash.split('|')) {
             const parts = element.split('-', 2);
             switch (parts[1]) {
@@ -62,6 +65,9 @@
                 case 'xbox':
                     hasXBoxEL.checked = true;
                     break;
+                case 'personal_quest':
+                    personalQuestEL.checked = true;
+                    break;
                 case 'interacts':
                     interactsEL.value = parts[2];
                     break;
@@ -71,8 +77,7 @@
             }
         }
     }
-    function search()
-    {
+    function search() {
         const mod = modEL.value.toLowerCase();
         const follower = followerEL.value.toLowerCase();
         const race = raceEL.value.toLowerCase();
@@ -82,9 +87,12 @@
         const hasXBox = hasXBoxEL.checked;
         const interacts = interactsEL.value.toLowerCase();
         const quest = questEL.value.toLowerCase();
+        const personalQuest = personalQuestEL.checked;
 
         const hash = getHash();
-        history.pushState ? history.pushState(null, null, '#'+hash) : location.hash = '#'+hash;
+        if (hash !== location.hash) {
+            history.pushState ? history.pushState(null, null, '#' + hash) : location.hash = '#' + hash;
+        }
 
         const mods = document.getElementsByClassName("mod");
         const followers = document.getElementsByClassName("follower");
@@ -102,6 +110,9 @@
             if (!followers.item(i).getAttribute('data-quest').includes(quest)) {
                 mayDisplay = false;
             }
+            if (personalQuest && !followers.item(i).hastAtribute('data-personal-quest')) {
+                mayDisplay = false;
+            }
             const lns = Number.parseInt(followers.item(i).getAttribute('data-lines'));
             if (lns < lines) {
                 mayDisplay = false;
@@ -113,10 +124,10 @@
         }
         for (let i = 0; i < mods.length; i++) {
             let mayDisplay = mods.item(i).getAttribute('data-mod').includes(mod);
-            if (mods.item(i).hasAttribute('adult') && !adult) {
+            if (mods.item(i).hasAttribute('data-adult') && !adult) {
                 mayDisplay = false;
             }
-            if (!mods.item(i).hasAttribute('xbox') && hasXBox) {
+            if (!mods.item(i).hasAttribute('data-xbox') && hasXBox) {
                 mayDisplay = false;
             }
             if (mayDisplay) {
@@ -148,6 +159,7 @@
     sexEL.addEventListener('change', search);
     adultEL.addEventListener('change', search);
     hasXBoxEL.addEventListener('change', search);
+    personalQuestEL.addEventListener('change', search);
     interactsEL.addEventListener('keyup', search);
     questEL.addEventListener('keyup', search);
 })();

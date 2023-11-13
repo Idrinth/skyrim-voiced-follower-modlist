@@ -30,6 +30,7 @@ If a follower is missing just add the following information to mods.yml or open 
   - name: Idrinth Thalui
     race: High Elf
     sex: male
+    quest: true
     lines: 1837
     reference: "0x803"
     interactions:
@@ -40,6 +41,7 @@ If a follower is missing just add the following information to mods.yml or open 
       dialogue: true
     quests:
     - Example Quest Name
+    - Other commented on Quest
 ```
 
 ### Reference-ID
