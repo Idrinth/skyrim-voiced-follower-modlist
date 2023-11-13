@@ -16,7 +16,7 @@ li ul {
     margin: 0;
 }
 .follower {
-    width: 50%;
+    width: 100%;
     border-radius: 1em;
 }
 form {
@@ -30,7 +30,12 @@ fieldset {
 .mod {
     border: 1px solid;
 }
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 600px) {
+    .follower {
+        width: 50%;
+    }
+}
+@media screen and (min-width: 750px) {
     fieldset {
         grid-template-columns: 1fr 1fr;
     }

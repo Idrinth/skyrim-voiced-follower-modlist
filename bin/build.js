@@ -5,7 +5,7 @@ const crypto = require('crypto');
 
 const fileHash = (file) => {
     const hash = crypto.createHash('md5');
-    hash.update(fs.readFileSync(__dirname + '/../resources/styles/' + file, 'utf8'));
+    hash.update(fs.readFileSync(__dirname + '/../resources/' + file, 'utf8'));
     return hash.digest('hex');
 }
 handlebars.registerHelper('dateOnly', function (date) {
@@ -26,7 +26,14 @@ for (const style of ['design.css', 'reset.css', 'layout.css']) {
         __dirname + '/../deploy/' + style,
         fs.readFileSync(__dirname + '/../resources/styles/' + style, 'utf8')
     );
-    hashes[style.replace(/\.css$/, '')] = fileHash(style);
+    hashes[style.replace(/\.css$/, '')] = fileHash('styles/' + style);
+}
+for (const script of ['search.js', 'title.js']) {
+    fs.writeFileSync(
+        __dirname + '/../deploy/' + script,
+        fs.readFileSync(__dirname + '/../resources/scripts/' + script, 'utf8')
+    );
+    hashes[script.replace(/\.css$/, '')] = fileHash('scripts/' + script);
 }
 fs.writeFileSync(
     __dirname + '/../deploy/favicon.ico',
