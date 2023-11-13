@@ -605,9 +605,9 @@
     lines: 400
     reference: "0x05360A3B"
 - name: Tezya Custom Voiced Male Altmer Companion
+  description: Tezya can be found in Winterhold Tavern. He's an old, forgetful Altmer monk.
   link: https://www.nexusmods.com/skyrimspecialedition/mods/101301
   file: 0Tezya.esp
-  description: 
   author: NocturneDragoon
   adult-only: false
   xbox: true
