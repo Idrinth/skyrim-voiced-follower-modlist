@@ -13,15 +13,15 @@
     for (let i=0;i< els.length;i++) {
         const element = els.item(i);
         element.addEventListener('mouseleave', () => {
-            element.classList.add('active');
+            element.classList.remove('active');
         });
         element.previousElementSibling.addEventListener('mouseenter', () => {
-            element.classList.remove('active');
+            element.classList.add('active');
             const offset = calcOffset(element.previousElementSibling);
             element.setAttribute('style', 'left:'+offset.left+'px; top:'+offset.top+'px');
         });
         element.previousElementSibling.addEventListener('click', () => {
-            element.classList.remove('active');
+            element.classList.add('active');
             const offset = calcOffset(element.previousElementSibling);
             element.setAttribute('style', 'left:'+offset.left+'px; top:'+offset.top+'px');
         });
