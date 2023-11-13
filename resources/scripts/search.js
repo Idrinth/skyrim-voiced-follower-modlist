@@ -132,20 +132,20 @@
         }
     }
     window.setTimeout(search, 100);
-    window.addEventListener('onhashchange', (event) => {
+    window.addEventListener('hashchange', (event) => {
         const hash = getHash();
         if (hash !== location.hash) {
             parseHash(location.hash);
             search();
         }
     });
-    modEL.addEventListener('onkeyup', search);
-    followerEL.addEventListener('onkeyup', search);
-    raceEL.addEventListener('onkeyup', search);
-    linesEL.addEventListener('onkeyup', search);
-    sexEL.addEventListener('onchange', search);
-    adultEL.addEventListener('onchange', search);
-    hasXBoxEL.addEventListener('onchange', search);
-    interactsEL.addEventListener('onkeyup', search);
-    questEL.addEventListener('onkeyup', search);
+    modEL.addEventListener('keyup', search);
+    followerEL.addEventListener('keyup', search);
+    raceEL.addEventListener('keyup', search);
+    linesEL.addEventListener('keyup', search);
+    sexEL.addEventListener('change', search);
+    adultEL.addEventListener('change', search);
+    hasXBoxEL.addEventListener('change', search);
+    interactsEL.addEventListener('keyup', search);
+    questEL.addEventListener('keyup', search);
 })();
