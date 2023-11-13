@@ -536,10 +536,24 @@
   version: 1.0.0
   file: BR10KonnorFollower.esp
   followers:
-  - name: Konnor
-    race: Nord
-    lines: 19
-    reference: "-"
+    - name: Konnor
+      race: Nord
+      lines: 19
+      reference: "-"
+- name: Eucleia - Voiced Mage Follower
+  description: Eucleia Septima is a standalone voiced Imperial mage follower. She's a mildly eccentric, indecisive academic. She's wry, curious, and a little snooty.
+  link: https://www.nexusmods.com/skyrimspecialedition/mods/87509
+  author: unamazement
+  released: 2023-03-21
+  updated: 2023-04-03
+  adult-only: false
+  version: 1.1.0
+  file: Eucleia Follower.esp
+  followers:
+    - name: Eucleia Septima
+      race: Imperial
+      lines: 540
+      reference: "0x0"
 - name: Drog gro-Dan (Orc and Axe Story) Fully Voiced Warrior
   description: The Mod add a new Voiced Orc-follower. He is a Warrior with Axe. Honest, vise, brave and powerful. 
   link: https://www.nexusmods.com/skyrimspecialedition/mods/60754
@@ -553,7 +567,7 @@
   - name: Drog gro-Dan
     race: Orsimer/Orc
     lines: 136
-    reference: 0x0
+    reference: "0x0"
 - name: Isadore Custom Voiced Male Bosmer
   link: https://www.nexusmods.com/skyrimspecialedition/mods/79423
   file: 0Isadore.esp
