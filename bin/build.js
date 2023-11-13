@@ -33,7 +33,7 @@ for (const script of ['search.js', 'title.js']) {
         __dirname + '/../deploy/' + script,
         fs.readFileSync(__dirname + '/../resources/scripts/' + script, 'utf8')
     );
-    hashes[script.replace(/\.css$/, '')] = fileHash('scripts/' + script);
+    hashes[script.replace(/\.js$/, '')] = fileHash('scripts/' + script);
 }
 fs.writeFileSync(
     __dirname + '/../deploy/favicon.ico',
