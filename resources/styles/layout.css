@@ -37,10 +37,10 @@ fieldset {
     display: block;
     width: 300px;
 }
-title ul {
+.title ul {
     display: block;
 }
-title li {
+.title li {
     display: list-item;
     list-style: circle;
 }
