@@ -37,6 +37,8 @@ body > ul {
 .title.active {
     text-align: left;
     background-color: #444;
+    border: 1px solid #000;
+    box-shadow: 3px 3px 6px;
 }
 @media screen and (min-width: 600px) {
     form {
