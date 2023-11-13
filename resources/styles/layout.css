@@ -40,6 +40,7 @@ fieldset {
 }
 .title ul {
     display: block;
+    padding-left: 1em;
 }
 .title li {
     display: list-item;

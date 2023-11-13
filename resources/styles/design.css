@@ -34,7 +34,11 @@ body > ul {
     cursor: pointer;
     cursor: zoom-in;
 }
-@media screen and (min-width: 700px) {
+.title.active {
+    text-align: left;
+    background-color: #444;
+}
+@media screen and (min-width: 600px) {
     form {
         background-color: #444;
         box-shadow: 3px 3px 6px;
