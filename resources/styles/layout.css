@@ -30,6 +30,20 @@ fieldset {
 .mod {
     border: 1px solid;
 }
+.title {
+    display: none;
+}
+.title.active {
+    display: block;
+    width: 300px;
+}
+title ul {
+    display: block;
+}
+title li {
+    display: list-item;
+    list-style: circle;
+}
 @media screen and (min-width: 600px) {
     .follower {
         width: 50%;
