@@ -12,16 +12,16 @@
     const els = document.getElementsByClassName('title');
     for (let i=0;i< els.length;i++) {
         const element = els.item(i);
-        element.addEventListener('mouseout', () => {
-            element.classList.toggle('active');
+        element.addEventListener('mouseleave', () => {
+            element.classList.add('active');
         });
-        element.previousElementSibling.addEventListener('mouseover', () => {
-            element.classList.toggle('active');
+        element.previousElementSibling.addEventListener('mouseenter', () => {
+            element.classList.remove('active');
             const offset = calcOffset(element.previousElementSibling);
             element.setAttribute('style', 'left:'+offset.left+'px; top:'+offset.top+'px');
         });
         element.previousElementSibling.addEventListener('click', () => {
-            element.classList.toggle('active');
+            element.classList.remove('active');
             const offset = calcOffset(element.previousElementSibling);
             element.setAttribute('style', 'left:'+offset.left+'px; top:'+offset.top+'px');
         });
