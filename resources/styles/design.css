@@ -45,6 +45,10 @@ body > ul {
         background-color: #444;
         box-shadow: 3px 3px 6px;
     }
+    legend {
+        color: #f00;
+        font-weight: bold;
+    }
     .follower {
         background-color: #444
     }
