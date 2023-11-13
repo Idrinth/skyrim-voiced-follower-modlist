@@ -83,7 +83,8 @@
         const interacts = interactsEL.value.toLowerCase();
         const quest = questEL.value.toLowerCase();
 
-        location.hash = getHash();
+        const hash = getHash();
+        history.pushState ? history.pushState(null, null, '#'+hash) : location.hash = '#'+hash;
 
         const mods = document.getElementsByClassName("mod");
         const followers = document.getElementsByClassName("follower");
@@ -131,6 +132,7 @@
             mods.item(i).style.display = mayDisplay ? "grid" : "none";
         }
     }
+    parseHash(location.hash);
     window.setTimeout(search, 100);
     window.addEventListener('hashchange', (event) => {
         const hash = getHash();
