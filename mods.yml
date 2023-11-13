@@ -537,7 +537,7 @@
   file: BR10KonnorFollower.esp
   followers:
     - name: Konnor
-      sex: female
+      sex: male
       race: Nord
       lines: 19
       reference: "-"
