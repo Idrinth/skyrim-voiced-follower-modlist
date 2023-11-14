@@ -145,7 +145,7 @@
     }
     parseHash(location.hash);
     window.setTimeout(search, 100);
-    window.addEventListener('hashchange', (event) => {
+    window.addEventListener('hashchange', () => {
         const hash = getHash();
         if (hash !== location.hash) {
             parseHash(location.hash);
