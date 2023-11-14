@@ -43,6 +43,7 @@
                         <h3>{{name}} ({{race}}, {{sex}})</h3>
                         <p class="lines">{{lines}} Lines</p>
                         <p class="reference">Reference: {{reference}}</p>
+                        <p class="personal-quest">Personal Quest: {{#if quest}}yes{{else}}no{{/if}}</p>
                         {{#if interactions}}
                         <p class="interactions" data-title="interactions-{{lowerCase name}}">Interactions: {{interactions.length}}</p>
                         <div class="title" id="interactions-{{lowerCase name}}">
